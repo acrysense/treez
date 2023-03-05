@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TREEZ</title>
+	<meta property="og:title" content="TREEZ">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="TREEZ">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header"> <!-- for transparent header add class "header--transparent" -->
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__inner">
+						<!-- if header transparent -->
+						<!-- <a href="index.html" class="header__logotype">
+                    <img src="img/logotype-white.png" alt="TREEZ">
+                </a> -->
+						<!-- default -->
+						<a href="index.html" class="header__logotype">
+							<img src="img/logotype.png" alt="TREEZ">
+						</a>
+						<ul class="header__contacts header__inner">
+							<li class="header__contacts-item">
+								<a href="tel:84954325813" class="header__contacts-link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-phone"></use>
+									</svg>
+									<span>8 (495) 432-58-13</span>
+								</a>
+							</li>
+							<li class="header__contacts-item">
+								<a href="tel:88003332941" class="header__contacts-link">
+									<span>8 800 333-29-41</span>
+								</a>
+							</li>
+							</l>
+							<a href="#" class="c-catalog header__catalog">
+								<svg class="c-catalog__icon">
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
+								</svg>
+								<span class="c-catalog__title">Каталог</span>
+							</a>
+					</div>
+					<div class="header__inner">
+						<div class="header__inner">
+							<a href="#" class="header__icon-wrap" id="search-toggle">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+							</a>
+							<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-user"></use>
+								</svg>
+							</a>
+							<a href="#" class="header__icon-wrap">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-favorite"></use>
+								</svg>
+							</a>
+							<a href="#" class="header__icon-wrap">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-cart"></use>
+								</svg>
+							</a>
+						</div>
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- search -->
+		<div class="search" id="search">
+			<div class="search__wrap">
+				<div class="container">
+					<div class="search__top">
+						<button class="search__close btn-close">
+							<svg class="btn-close__icon btn-close__icon--desktop">
+								<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+							</svg>
+							<svg class="btn-close__icon btn-close__icon--mobile">
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="search__wrapper">
+						<span class="search__subtitle">Быстрый поиск товара</span>
+						<div class="search__main">
+							<div class="search__controls">
+								<input type="text" class="search__input" placeholder="Введите текст для поиска">
+								<button class="search__btn-search">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+									<span>Найти</span>
+								</button>
+							</div>
+							<div class="search__dropdown">
+								<ul class="search__list">
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>буки</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук Будда Биг Лиф</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук натуральный</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук новый</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук новый гигантский</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук Новый Японский Элегант</a>
+									</li>
+									<li class="search__item">
+										<a href="#" class="search__link"><b>Бам</b>бук ориенталь</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of search -->
+		<!-- content -->
+		<div class="wrapper__content"></div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__block footer__block--info">
+						<a href="index.html" class="footer__logotype">
+							<img src="img/logotype-grey.png" alt="TREEZ">
+						</a>
+						<p class="footer__text">
+							<a href="tel:84954325370">8 (495) 432-53-70</a>
+							<span>Москва</span><br>
+							<a href="tel:88003332941">8 800 333-29-41</a>
+							<span>Россия</span>
+						</p>
+						<a href="mailto:info@treez.ru" class="footer__text footer__text--accent">info@treez.ru</a>
+						<p class="footer__text">
+							г. Москва,<br>
+							Большой Тишинский переулок, 12
+						</p>
+						<p class="footer__text">
+							<span>Понедельник - пятница</span><br>
+							10:00-18:00, без перерыва
+						</p>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__title">Каталог</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Деревья</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Горшечные растения, кусты и мох</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Ампельные растения</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Кашпо</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Дизайнерские композиции</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Цветы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Растения и мох для Фитостен</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__title">О КОМПАНИИ</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">О Treez</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Доставка и оплата</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Вопросы и ответы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--tablet">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Положение о защите персональных данных</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Политика безопасности</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: перечень</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: ведомость</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Инструкция по эксплуатации</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--short-list">
+						<h3 class="footer__title footer__title--plug"></h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Новости</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Статьи</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Идеи</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Кашпо</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--social">
+						<h3 class="footer__subtitle">Присоеденяйтесь к treez <br>в социальных сетях</h3>
+						<ul class="c-socmedia footer__socmedia">
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-pinterest"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-dzen"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__block footer__block--copyright">
+						<p class="footer__copyright">
+							© Treez Collection.<br>
+							Искусственные цветы и деревья. 2005—2021
+						</p>
+					</div>
+					<div class="footer__block footer__block--list footer__block--no-tablet">
+						<ul class="footer__list footer__list--flex">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Положение о защите персональных данных</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Политика безопасности</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: перечень</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: ведомость</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Инструкция по эксплуатации</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--design-by">
+						<div class="c-design-by">
+							<picture class="c-design-by__img">
+								<img src="img/icrea.svg" alt="icrea">
+							</picture>
+							<p class="c-design-by__text">Дизайн и разработка сайта <a href="icrea.ru" target="_blank">icrea.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+		<a href="#header" class="c-up-btn">
+			<svg class="c-up-btn__icon">
+				<use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+			</svg>
+		</a>
+	</div>
+	<!-- end of wrapper -->
+	<!-- modal -->
+	<div class="modal" id="modal-auth">
+		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
+			<svg class="modal__close-icon">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal__scroll">
+			<div class="modal__wrap">
+				<button class="modal__close-btn modal__close-btn--desktop modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__wrapper modal__wrapper--flex">
+					<div class="modal__tabs">
+						<button class="modal__tab is--active" data-modal-tab="left">Авторизация</button>
+						<button class="modal__tab" data-modal-tab="right">Регистрация</button>
+					</div>
+					<div class="modal__left is--active">
+						<div class="modal__main">
+							<div class="modal__body">
+								<h3 class="modal__heading">Авторизация</h3>
+								<form action="#" class="modal__form">
+									<div class="input-field modal__input">
+										<div class="input-field__inner">
+											<input type="email" id="auth-email" class="input-field__input" placeholder="Введите свой e-mail">
+										</div>
+										<label for="auth-email" class="input-field__label">E-MAIL *</label>
+									</div>
+									<div class="input-field modal__input">
+										<div class="input-field__inner">
+											<input type="password" id="auth-password" class="input-field__input" placeholder="Введите пароль">
+										</div>
+										<label for="auth-password" class="input-field__label">пароль *</label>
+									</div>
+								</form>
+								<div class="modal__inner">
+									<div class="square-checkbox modal__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="save-data">
+										<label for="save-data" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Запомнить</span>
+										</label>
+									</div>
+									<a href="#" class="modal__link">Восстановить пароль</a>
+								</div>
+								<div class="c-socauth modal__socauth">
+									<div class="c-socauth__top">
+										<span class="c-socauth__title">Войти через соцсети:</span>
+										<span class="c-socauth__help">Необходим действующий аккаунт</span>
+									</div>
+									<ul class="c-socauth__list">
+										<li class="c-socauth__item">
+											<a href="#" class="c-socauth__link">
+												<svg class="c-socauth__icon">
+													<use xlink:href="img/sprite.svg#icon-google-color"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="c-socauth__item">
+											<a href="#" class="c-socauth__link">
+												<svg class="c-socauth__icon">
+													<use xlink:href="img/sprite.svg#icon-vk-color"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="c-socauth__item">
+											<a href="#" class="c-socauth__link">
+												<svg class="c-socauth__icon">
+													<use xlink:href="img/sprite.svg#icon-facebook-color"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="c-socauth__item">
+											<a href="#" class="c-socauth__link">
+												<svg class="c-socauth__icon">
+													<use xlink:href="img/sprite.svg#icon-apple-color"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="modal__btn btn">Войти</a>
+						</div>
+					</div>
+					<div class="modal__right">
+						<div class="modal__main">
+							<div class="modal__body">
+								<h3 class="modal__heading">Новый пользователь</h3>
+								<form action="#" class="modal__form">
+									<div class="input-field modal__input">
+										<div class="input-field__inner">
+											<input type="email" id="register-email" class="input-field__input" placeholder="Введите свой e-mail">
+										</div>
+										<label for="register-email" class="input-field__label">E-MAIL *</label>
+									</div>
+								</form>
+								<div class="modal__content content">
+									<p class="accent">
+										Внимание! Регистрация только для юридических лиц, ИП и специалистов. Обратите внимание, что компания не работает с частными лицами.
+									</p>
+									<p>
+										Внимание! После первичной регистрации просим максимально правильно заполнять все поля. Важно! Представителей юридических фирм регистрироваться как Юридическое лицо, для ИП так же есть специальная форма регистрации. Это необходимо, чтобы ваши заказы правильно обрабатывались.
+									</p>
+								</div>
+								<div class="modal__checkboxes">
+									<div class="square-checkbox square-checkbox--sm modal__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="subscribe-email">
+										<label for="subscribe-email" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Подписаться на рассылку</span>
+										</label>
+									</div>
+									<div class="square-checkbox square-checkbox--sm modal__checkbox">
+										<input type="checkbox" class="square-checkbox__input" id="conditions-data">
+										<label for="conditions-data" class="square-checkbox__group">
+											<span class="square-checkbox__icon"></span>
+											<span class="square-checkbox__title">Я подтверждаю, что я старше 18 лет и принимаю <a href="#">условия работы сайта</a></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="modal__btn btn">Зарегистрироваться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modal -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
