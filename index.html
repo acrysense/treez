@@ -23,13 +23,9 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__inner">
-						<!-- if header transparent -->
-						<!-- <a href="index.html" class="header__logotype">
-                    <img src="img/logotype-white.png" alt="TREEZ">
-                </a> -->
-						<!-- default -->
 						<a href="index.html" class="header__logotype">
-							<img src="img/logotype.png" alt="TREEZ">
+							<img src="img/logotype.png" alt="TREEZ" class="header__logotype-img default">
+							<img src="img/logotype-white.png" alt="TREEZ" class="header__logotype-img white">
 						</a>
 						<ul class="header__contacts header__inner">
 							<li class="header__contacts-item">
@@ -45,13 +41,13 @@
 									<span>8 800 333-29-41</span>
 								</a>
 							</li>
-							</l>
-							<a href="#" class="c-catalog header__catalog">
-								<svg class="c-catalog__icon">
-									<use xlink:href="img/sprite.svg#icon-catalog"></use>
-								</svg>
-								<span class="c-catalog__title">Каталог</span>
-							</a>
+						</ul>
+						<a href="#" class="c-catalog header__catalog">
+							<svg class="c-catalog__icon">
+								<use xlink:href="img/sprite.svg#icon-catalog"></use>
+							</svg>
+							<span class="c-catalog__title">Каталог</span>
+						</a>
 					</div>
 					<div class="header__inner">
 						<div class="header__inner">
@@ -61,6 +57,11 @@
 								</svg>
 							</a>
 							<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
+								<svg class="header__icon">
+									<use xlink:href="img/sprite.svg#icon-user"></use>
+								</svg>
+							</a>
+							<a href="#" class="header__icon-wrap header__icon-wrap--active">
 								<svg class="header__icon">
 									<use xlink:href="img/sprite.svg#icon-user"></use>
 								</svg>
@@ -83,66 +84,137 @@
 						</button>
 					</div>
 				</div>
-			</div>
-		</header>
-		<!-- end of header -->
-		<!-- search -->
-		<div class="search" id="search">
-			<div class="search__wrap">
-				<div class="container">
-					<div class="search__top">
-						<button class="search__close btn-close">
-							<svg class="btn-close__icon btn-close__icon--desktop">
-								<use xlink:href="img/sprite.svg#icon-close-thin"></use>
-							</svg>
-							<svg class="btn-close__icon btn-close__icon--mobile">
-								<use xlink:href="img/sprite.svg#icon-close"></use>
-							</svg>
-						</button>
-					</div>
-					<div class="search__wrapper">
-						<span class="search__subtitle">Быстрый поиск товара</span>
-						<div class="search__main">
-							<div class="search__controls">
-								<input type="text" class="search__input" placeholder="Введите текст для поиска">
-								<button class="search__btn-search">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
-									<span>Найти</span>
-								</button>
-							</div>
-							<div class="search__dropdown">
-								<ul class="search__list">
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>буки</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук Будда Биг Лиф</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук натуральный</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук новый</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук новый гигантский</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук Новый Японский Элегант</a>
-									</li>
-									<li class="search__item">
-										<a href="#" class="search__link"><b>Бам</b>бук ориенталь</a>
-									</li>
-								</ul>
+				<div class="header__menu">
+					<div class="menu" id="menu">
+						<div class="menu__wrap">
+							<div class="menu__wrapper">
+								<div class="menu__block">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Каталог</a>
+										</li>
+									</ul>
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link">Деревья <sup class="menu__value">157</sup> <sup class="menu__value menu__value--new">+12</sup></a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Горшечные растения и кусты <sup class="menu__value">17</sup> <sup class="menu__value menu__value--new">+2</sup></a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Ампельные растения <sup class="menu__value">157</sup></a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Кашпо <sup class="menu__value">107</sup> <sup class="menu__value menu__value--new">+20</sup></a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Дизайнерские композиции <sup class="menu__value">157</sup> <sup class="menu__value menu__value--new">+50</sup></a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link">Цветы <sup class="menu__value">65</sup> <sup class="menu__value menu__value--new">+5</sup></a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu__block">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--plug"></a>
+										</li>
+									</ul>
+									<a href="#" class="menu__price-list">
+										<picture class="menu__img">
+											<img src="img/price-list.jpg" alt="Price list">
+										</picture>
+										<span class="menu__help">Прайс-листы и каталоги</span>
+									</a>
+								</div>
+								<div class="menu__block">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--plug"></a>
+										</li>
+									</ul>
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">О Treez</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Партнерам</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Доставка и оплата</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Вопросы и ответы</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Контакты</a>
+										</li>
+									</ul>
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Подарочный сертификат</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link menu__link--sm">Новости</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="header__search">
+					<div class="search" id="search">
+						<div class="search__wrap">
+							<div class="container">
+								<div class="search__wrapper">
+									<span class="search__subtitle">Быстрый поиск товара</span>
+									<div class="search__main">
+										<div class="search__controls">
+											<input type="text" class="search__input" placeholder="Введите текст для поиска">
+											<button class="search__btn-search">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-search"></use>
+												</svg>
+												<span>Найти</span>
+											</button>
+										</div>
+										<div class="search__dropdown">
+											<ul class="search__list">
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>буки</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук Будда Биг Лиф</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук натуральный</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук новый</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук новый гигантский</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук Новый Японский Элегант</a>
+												</li>
+												<li class="search__item">
+													<a href="#" class="search__link"><b>Бам</b>бук ориенталь</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__overlay"></div>
 			</div>
-		</div>
-		<!-- end of search -->
+		</header>
+		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content"></div>
 		<!-- end of content -->
@@ -335,7 +407,7 @@
 			</div>
 		</footer>
 		<!-- end of footer -->
-		<a href="#header" class="c-up-btn">
+		<a href="#header" class="c-up-btn fixed">
 			<svg class="c-up-btn__icon">
 				<use xlink:href="img/sprite.svg#icon-arrow-top"></use>
 			</svg>
@@ -343,7 +415,7 @@
 	</div>
 	<!-- end of wrapper -->
 	<!-- modal -->
-	<div class="modal" id="modal-auth">
+	<div class="modal fixed" id="modal-auth">
 		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
 			<svg class="modal__close-icon">
 				<use xlink:href="img/sprite.svg#icon-close"></use>
@@ -365,7 +437,17 @@
 						<div class="modal__main">
 							<div class="modal__body">
 								<h3 class="modal__heading">Авторизация</h3>
+								<div class="modal__notification">
+									<p class="modal__notification-text">
+										После авторизации, возможно, у вас не будет доступа к 3D моделям и изображениям.<br><br>
+										Для получения доступа необходимо обратиться к своему менеджеру.
+									</p>
+								</div>
 								<form action="#" class="modal__form">
+									<!-- add class 'is--active' for visible -->
+									<div class="form-error">
+										<span class="form-error__title">Неверный логин или пароль.</span>
+									</div>
 									<div class="input-field modal__input">
 										<div class="input-field__inner">
 											<input type="email" id="auth-email" class="input-field__input" placeholder="Введите свой e-mail">
@@ -433,7 +515,16 @@
 						<div class="modal__main">
 							<div class="modal__body">
 								<h3 class="modal__heading">Новый пользователь</h3>
+								<div class="modal__notification">
+									<p class="modal__notification-text">
+										Получение доступа к 3D моделям и изображениям возможно только после проверки аккаунта.
+									</p>
+								</div>
 								<form action="#" class="modal__form">
+									<!-- add class 'is--active' for visible -->
+									<div class="form-error">
+										<span class="form-error__title">Неверный логин или пароль.</span>
+									</div>
 									<div class="input-field modal__input">
 										<div class="input-field__inner">
 											<input type="email" id="register-email" class="input-field__input" placeholder="Введите свой e-mail">
