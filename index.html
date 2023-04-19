@@ -171,7 +171,7 @@
 								<div class="search__wrapper">
 									<span class="search__subtitle">Быстрый поиск товара</span>
 									<div class="search__main">
-										<div class="search__controls">
+										<form action="#" class="search__controls" data-ajaxblock=".search__dropdown" data-type="GET" data-noloader="true" data-suggest-url="/ajax/quick-search.php" novalidate="true">
 											<input type="text" class="search__input" placeholder="Введите текст для поиска">
 											<button class="search__btn-search">
 												<svg>
@@ -179,32 +179,8 @@
 												</svg>
 												<span>Найти</span>
 											</button>
-										</div>
-										<div class="search__dropdown">
-											<ul class="search__list">
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>буки</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук Будда Биг Лиф</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук натуральный</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук новый</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук новый гигантский</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук Новый Японский Элегант</a>
-												</li>
-												<li class="search__item">
-													<a href="#" class="search__link"><b>Бам</b>бук ориенталь</a>
-												</li>
-											</ul>
-										</div>
+										</form>
+										<div class="search__dropdown"></div>
 									</div>
 								</div>
 							</div>
@@ -435,129 +411,162 @@
 					</div>
 					<div class="modal__left is--active">
 						<div class="modal__main">
-							<div class="modal__body">
+							<div class="modal__top">
 								<h3 class="modal__heading">Авторизация</h3>
-								<div class="modal__notification">
-									<p class="modal__notification-text">
-										После авторизации, возможно, у вас не будет доступа к 3D моделям и изображениям.<br><br>
-										Для получения доступа необходимо обратиться к своему менеджеру.
-									</p>
-								</div>
-								<form action="#" class="modal__form">
-									<!-- add class 'is--active' for visible -->
-									<div class="form-error">
-										<span class="form-error__title">Неверный логин или пароль.</span>
+							</div>
+							<div class="modal__body">
+								<div class="modal__holder is--active" data-auth-form="login">
+									<div class="modal__notification">
+										<p class="modal__notification-text">
+											После авторизации, возможно, у вас не будет доступа к 3D моделям и изображениям.<br><br>
+											Для получения доступа необходимо обратиться к своему менеджеру.
+										</p>
 									</div>
-									<div class="input-field modal__input">
-										<div class="input-field__inner">
-											<input type="email" id="auth-email" class="input-field__input" placeholder="Введите свой e-mail">
+									<form action="#" class="modal__form">
+										<!-- add class 'is--active' for visible -->
+										<div class="form-error">
+											<span class="form-error__title">Неверный логин или пароль.</span>
 										</div>
-										<label for="auth-email" class="input-field__label">E-MAIL *</label>
-									</div>
-									<div class="input-field modal__input">
-										<div class="input-field__inner">
-											<input type="password" id="auth-password" class="input-field__input" placeholder="Введите пароль">
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="auth-email" class="input-field__input" placeholder="Введите свой e-mail">
+											</div>
+											<label for="auth-email" class="input-field__label">E-MAIL *</label>
 										</div>
-										<label for="auth-password" class="input-field__label">пароль *</label>
-									</div>
-								</form>
-								<div class="modal__inner">
-									<div class="square-checkbox modal__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="save-data">
-										<label for="save-data" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Запомнить</span>
-										</label>
-									</div>
-									<a href="#" class="modal__link">Восстановить пароль</a>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="password" id="auth-password" class="input-field__input" placeholder="Введите пароль">
+											</div>
+											<label for="auth-password" class="input-field__label">пароль *</label>
+										</div>
+										<div class="modal__inner">
+											<div class="square-checkbox modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="save-data">
+												<label for="save-data" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Запомнить</span>
+												</label>
+											</div>
+											<a href="#" class="modal__link modal-auth-trigger" data-auth-form="restore">Восстановить пароль</a>
+										</div>
+										<div class="c-socauth modal__socauth">
+											<div class="c-socauth__top">
+												<span class="c-socauth__title">Войти через соцсети:</span>
+												<span class="c-socauth__help">Необходим действующий аккаунт</span>
+											</div>
+											<ul class="c-socauth__list">
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-google-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-vk-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-facebook-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-apple-color"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Войти</button>
+										</div>
+									</form>
 								</div>
-								<div class="c-socauth modal__socauth">
-									<div class="c-socauth__top">
-										<span class="c-socauth__title">Войти через соцсети:</span>
-										<span class="c-socauth__help">Необходим действующий аккаунт</span>
-									</div>
-									<ul class="c-socauth__list">
-										<li class="c-socauth__item">
-											<a href="#" class="c-socauth__link">
-												<svg class="c-socauth__icon">
-													<use xlink:href="img/sprite.svg#icon-google-color"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="c-socauth__item">
-											<a href="#" class="c-socauth__link">
-												<svg class="c-socauth__icon">
-													<use xlink:href="img/sprite.svg#icon-vk-color"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="c-socauth__item">
-											<a href="#" class="c-socauth__link">
-												<svg class="c-socauth__icon">
-													<use xlink:href="img/sprite.svg#icon-facebook-color"></use>
-												</svg>
-											</a>
-										</li>
-										<li class="c-socauth__item">
-											<a href="#" class="c-socauth__link">
-												<svg class="c-socauth__icon">
-													<use xlink:href="img/sprite.svg#icon-apple-color"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
+								<div class="modal__holder" data-auth-form="restore">
+									<form action="#" class="modal__form">
+										<div class="modal__content content">
+											<p>
+												Для восстановления пароля введите Ваш e-mail, указанный при регистрации
+											</p>
+										</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="auth-email-restore" class="input-field__input" placeholder="Введите свой e-mail">
+											</div>
+											<label for="auth-email" class="input-field__label">E-MAIL *</label>
+										</div>
+										<div class="modal__inner">
+											<a href="#" class="modal__link modal-auth-trigger" data-auth-form="login">Авторизация</a>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Отправить</button>
+										</div>
+									</form>
 								</div>
 							</div>
-							<a href="#" class="modal__btn btn">Войти</a>
 						</div>
 					</div>
 					<div class="modal__right">
 						<div class="modal__main">
-							<div class="modal__body">
+							<div class="modal__top">
 								<h3 class="modal__heading">Новый пользователь</h3>
-								<div class="modal__notification">
-									<p class="modal__notification-text">
-										Получение доступа к 3D моделям и изображениям возможно только после проверки аккаунта.
-									</p>
-								</div>
-								<form action="#" class="modal__form">
-									<!-- add class 'is--active' for visible -->
-									<div class="form-error">
-										<span class="form-error__title">Неверный логин или пароль.</span>
+							</div>
+							<div class="modal__body">
+								<div class="modal__holder is--active">
+									<div class="modal__notification">
+										<p class="modal__notification-text">
+											Получение доступа к 3D моделям и изображениям возможно только после проверки аккаунта.
+										</p>
 									</div>
-									<div class="input-field modal__input">
-										<div class="input-field__inner">
-											<input type="email" id="register-email" class="input-field__input" placeholder="Введите свой e-mail">
+									<form action="#" class="modal__form">
+										<!-- add class 'is--active' for visible -->
+										<div class="form-error">
+											<span class="form-error__title">Неверный логин или пароль.</span>
 										</div>
-										<label for="register-email" class="input-field__label">E-MAIL *</label>
-									</div>
-								</form>
-								<div class="modal__content content">
-									<p class="accent">
-										Внимание! Регистрация только для юридических лиц, ИП и специалистов. Обратите внимание, что компания не работает с частными лицами.
-									</p>
-									<p>
-										Внимание! После первичной регистрации просим максимально правильно заполнять все поля. Важно! Представителей юридических фирм регистрироваться как Юридическое лицо, для ИП так же есть специальная форма регистрации. Это необходимо, чтобы ваши заказы правильно обрабатывались.
-									</p>
-								</div>
-								<div class="modal__checkboxes">
-									<div class="square-checkbox square-checkbox--sm modal__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="subscribe-email">
-										<label for="subscribe-email" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Подписаться на рассылку</span>
-										</label>
-									</div>
-									<div class="square-checkbox square-checkbox--sm modal__checkbox">
-										<input type="checkbox" class="square-checkbox__input" id="conditions-data">
-										<label for="conditions-data" class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Я подтверждаю, что я старше 18 лет и принимаю <a href="#">условия работы сайта</a></span>
-										</label>
-									</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="register-email" class="input-field__input" placeholder="Введите свой e-mail">
+											</div>
+											<label for="register-email" class="input-field__label">E-MAIL *</label>
+										</div>
+										<div class="modal__content content">
+											<p class="accent">
+												Внимание! Регистрация только для юридических лиц, ИП и специалистов. Обратите внимание, что компания не работает с частными лицами.
+											</p>
+											<p>
+												Внимание! После первичной регистрации просим максимально правильно заполнять все поля. Важно! Представителей юридических фирм регистрироваться как Юридическое лицо, для ИП так же есть специальная форма регистрации. Это необходимо, чтобы ваши заказы правильно обрабатывались.
+											</p>
+										</div>
+										<div class="modal__checkboxes">
+											<div class="square-checkbox square-checkbox--sm modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="subscribe-email">
+												<label for="subscribe-email" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Подписаться на рассылку</span>
+												</label>
+											</div>
+											<div class="square-checkbox square-checkbox--sm modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="conditions-data">
+												<label for="conditions-data" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Я подтверждаю, что я старше 18 лет и принимаю <a href="#">условия работы сайта</a></span>
+												</label>
+											</div>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Зарегистрироваться</button>
+										</div>
+									</form>
 								</div>
 							</div>
-							<a href="#" class="modal__btn btn">Зарегистрироваться</a>
 						</div>
 					</div>
 				</div>
