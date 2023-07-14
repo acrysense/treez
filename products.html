@@ -254,7 +254,7 @@
 							<div class="catalog-sort catalog__sort">
 								<div class="catalog-sort__wrapper">
 									<div class="catalog-sort__item catalog-sort__item--sort c-sort">
-										<div class="c-sort__wrapper">
+										<div class="c-sort__wrapper c-sort__wrapper--column">
 											<span class="c-sort__title">Сортировать по</span>
 											<div class="c-sort__controls">
 												<div class="c-sort__btns c-sort-btns">
@@ -264,11 +264,27 @@
 														<button class="c-sort-btns__control">Цене</button>
 														<button class="c-sort-btns__control">Обновлению</button>
 													</div>
+													<div class="c-sort-btns__select default-select">
+														<select class="js-select">
+															<option value="0">Названию по возрастанию</option>
+															<option value="1">Названию по убыванию</option>
+															<option value="2">Популярности по возрастанию</option>
+															<option value="3">Все</option>
+														</select>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="catalog-sort__item catalog-sort__item--availability"></div>
+									<div class="catalog-sort__item catalog-sort__item--availability c-sort">
+										<label for="switch-availability" class="switch c-sort__switch">
+											<input type="checkbox" id="switch-availability" class="switch__input">
+											<div class="switch__group">
+												<span class="switch__icon"></span>
+												<span class="switch__title">Только в наличии</span>
+											</div>
+										</label>
+									</div>
 									<div class="catalog-sort__item catalog-sort__item--goods c-sort">
 										<div class="c-sort__wrapper">
 											<span class="c-sort__title">Товаров на странице</span>
@@ -300,6 +316,33 @@
 														</svg>
 													</button>
 												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-sort__item catalog-sort__item--filter c-filter-trigger">
+										<button class="c-filter-trigger__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-filter"></use>
+											</svg>
+											<span>Параметры</span>
+										</button>
+									</div>
+								</div>
+								<div class="catalog-sort__mobile c-sort">
+									<div class="c-sort__wrapper">
+										<span class="c-sort__title">Вид</span>
+										<div class="c-sort__controls c-sort-view">
+											<div class="c-sort-view__controls">
+												<button class="c-sort-view__control">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-view-01"></use>
+													</svg>
+												</button>
+												<button class="c-sort-view__control is--active">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-view-02"></use>
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
