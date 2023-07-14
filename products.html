@@ -213,9 +213,9 @@
 						</ol>
 					</div>
 					<div class="catalog-sections page-top__catalog">
-						<div class="catalog-section__wrapper">
+						<div class="catalog-sections__wrapper">
 							<a class="catalog-sections__item" href="#">Деревья</a>
-							<a class="catalog-sections__item" href="#">Растения, кусты, мох и трава</a>
+							<a class="catalog-sections__item is--active" href="#">Растения, кусты, мох и трава</a>
 							<a class="catalog-sections__item" href="#">Ампельные растения</a>
 							<a class="catalog-sections__item" href="#">Кашпо</a>
 							<a class="catalog-sections__item" href="#">Дизайнерские композиции</a>
@@ -244,6 +244,469 @@
 				</div>
 			</div>
 			<!-- end of page search -->
+			<!-- catalog -->
+			<div class="catalog" id="catalog">
+				<div class="container">
+					<div class="catalog__hubs"></div>
+					<div class="catalog__wrap">
+						<div class="catalog__left"></div>
+						<div class="catalog__right">
+							<div class="catalog-sort catalog__sort">
+								<div class="catalog-sort__wrapper">
+									<div class="catalog-sort__item catalog-sort__item--sort c-sort">
+										<div class="c-sort__wrapper">
+											<span class="c-sort__title">Сортировать по</span>
+											<div class="c-sort__controls">
+												<div class="c-sort__btns c-sort-btns">
+													<div class="c-sort-btns__controls">
+														<button class="c-sort-btns__control is--active">Названию</button>
+														<button class="c-sort-btns__control">Популярности</button>
+														<button class="c-sort-btns__control">Цене</button>
+														<button class="c-sort-btns__control">Обновлению</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-sort__item catalog-sort__item--availability"></div>
+									<div class="catalog-sort__item catalog-sort__item--goods c-sort">
+										<div class="c-sort__wrapper">
+											<span class="c-sort__title">Товаров на странице</span>
+											<div class="c-sort__controls">
+												<div class="c-sort__select default-select">
+													<select class="js-select">
+														<option value="0">60</option>
+														<option value="1">80</option>
+														<option value="2">120</option>
+														<option value="3">Все</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-sort__item catalog-sort__item--view c-sort">
+										<div class="c-sort__wrapper">
+											<span class="c-sort__title">Вид</span>
+											<div class="c-sort__controls c-sort-view">
+												<div class="c-sort-view__controls">
+													<button class="c-sort-view__control">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-view-01"></use>
+														</svg>
+													</button>
+													<button class="c-sort-view__control is--active">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-view-02"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__wrapper">
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__statuses">
+											<span class="product-card__status">NEW</span>
+											<span class="product-card__status product-card__status--red">Акция</span>
+										</div>
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-box"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать 3D модель<br>Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-01.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-box"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать 3D модель<br>Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-02.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Алоказия</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-03.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Алоказия Калидора</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-04.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Алоказия Калидора куст</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-05.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Алоказия Калидора куст большой</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__statuses">
+											<span class="product-card__status">NEW</span>
+										</div>
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-01.png" alt="Image">
+										</a>
+									</div>
+									<div class="product-card__body">
+										<span class="product-card__help">Искусственное дерево</span>
+										<div class="product-card__name-wrap">
+											<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Размер см. <span>70</span></span>
+											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										</div>
+										<div class="product-card__info">
+											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+										</div>
+										<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-cart"></use>
+											</svg>
+											<span>Купить</span>
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of catalog -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
