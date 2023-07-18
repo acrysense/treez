@@ -223,6 +223,16 @@
 							<a class="catalog-sections__item" href="#">Товары с 3D-моделями</a>
 							<a class="catalog-sections__item" href="#">Растения и мох для Фитостен</a>
 						</div>
+						<select class="catalog-sections__select">
+							<option value="0">Деревья</option>
+							<option value="1">Растения, кусты, мох и трава</option>
+							<option value="2">Ампельные растения</option>
+							<option value="3">Кашпо</option>
+							<option value="4">Дизайнерские композиции</option>
+							<option value="5">Цветы</option>
+							<option value="6">Товары с 3D-моделями</option>
+							<option value="7">Растения и мох для Фитостен</option>
+						</select>
 					</div>
 				</div>
 			</section>
@@ -230,17 +240,49 @@
 			<!-- page search -->
 			<div class="page-search">
 				<div class="container">
-					<form action="#" class="page-search__form">
-						<div class="page-search__block">
-							<input type="text" class="page-search__input" placeholder="Введите название или артикул">
-							<span class="page-search__help">например, <a href="#">Кипарис</a></span>
+					<div class="page-search__wrapper">
+						<form action="#" class="page-search__form">
+							<div class="page-search__block">
+								<input type="text" class="page-search__input" placeholder="Введите название или артикул">
+								<span class="page-search__help">например, <a href="#">Кипарис</a></span>
+							</div>
+							<button class="page-search__btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-search"></use>
+								</svg>
+							</button>
+						</form>
+						<div class="c-pagination page-search__pagination">
+							<ul class="c-pagination__list">
+								<li class="c-pagination__item c-pagination__item--arrow is--hiddn">
+									<button class="c-pagination__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+										</svg>
+									</button>
+								</li>
+								<li class="c-pagination__item is--active">
+									<button class="c-pagination__btn">1</button>
+								</li>
+								<li class="c-pagination__item">
+									<button class="c-pagination__btn">2</button>
+								</li>
+								<li class="c-pagination__item">
+									<button class="c-pagination__btn">3</button>
+								</li>
+								<li class="c-pagination__item">
+									<button class="c-pagination__btn">4</button>
+								</li>
+								<li class="c-pagination__item c-pagination__item--arrow">
+									<button class="c-pagination__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</button>
+								</li>
+							</ul>
 						</div>
-						<button class="page-search__btn">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-search"></use>
-							</svg>
-						</button>
-					</form>
+					</div>
 				</div>
 			</div>
 			<!-- end of page search -->
@@ -335,91 +377,103 @@
 						<div class="catalog__left">
 							<div class="catalog-filter">
 								<form action="#" class="catalog-filter__form">
-									<div class="catalog-filter__block">
-										<h3 class="catalog-filter__heading">Параметры</h3>
-										<label for="switch-3d-models" class="switch catalog-filter__switch">
-											<input type="checkbox" id="switch-3d-models" class="switch__input">
-											<div class="switch__group">
-												<span class="switch__icon"></span>
-												<span class="switch__title">Есть 3D модели</span>
-											</div>
-										</label>
-									</div>
-									<div class="catalog-filter__block is--open">
-										<button class="catalog-filter__trigger">
-											<span>Группа</span>
-											<!-- <span class="catalog-filter__trigger--clear">Сбросить</span> -->
-										</button>
-										<div class="catalog-filter__dropdown" style="display: block;">
-											<div class="catalog-filter__checkboxes">
-												<div class="square-checkbox catalog-filter__checkbox">
-													<input type="checkbox" class="square-checkbox__input" id="filter-group-01">
-													<label for="filter-group-01" class="square-checkbox__group">
-														<span class="square-checkbox__icon"></span>
-														<span class="square-checkbox__title">Ветки деревьев</span>
-													</label>
-												</div>
-												<div class="square-checkbox catalog-filter__checkbox">
-													<input type="checkbox" class="square-checkbox__input" id="filter-group-02">
-													<label for="filter-group-02" class="square-checkbox__group">
-														<span class="square-checkbox__icon"></span>
-														<span class="square-checkbox__title">Газонные коврики/мох</span>
-													</label>
-												</div>
-												<div class="square-checkbox catalog-filter__checkbox">
-													<input type="checkbox" class="square-checkbox__input" id="filter-group-03">
-													<label for="filter-group-03" class="square-checkbox__group">
-														<span class="square-checkbox__icon"></span>
-														<span class="square-checkbox__title">Горшечные растения</span>
-													</label>
-												</div>
-												<div class="square-checkbox catalog-filter__checkbox">
-													<input type="checkbox" class="square-checkbox__input" id="filter-group-04">
-													<label for="filter-group-04" class="square-checkbox__group">
-														<span class="square-checkbox__icon"></span>
-														<span class="square-checkbox__title">Кактусы</span>
-													</label>
-												</div>
-											</div>
+									<div class="catalog-filter__holder">
+										<div class="catalog-filter__top">
+											<button class="catalog-filter__close">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-close"></use>
+												</svg>
+												<span>Скрыть</span>
+											</button>
 										</div>
-									</div>
-									<div class="catalog-filter__block is--open">
-										<button class="catalog-filter__trigger">
-											<span>Цена <span>Руб.</span></span>
-										</button>
-										<div class="catalog-filter__dropdown" style="display: block;">
-											<div class="catalog-filter__range">
-												<div class="catalog-filter__range-inner">
-													<div class="range-field">
-														<span class="range-field__help">От</span>
-														<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+										<div class="catalog-filter__main">
+											<div class="catalog-filter__block">
+												<h3 class="catalog-filter__heading">Параметры</h3>
+												<label for="switch-3d-models" class="switch catalog-filter__switch">
+													<input type="checkbox" id="switch-3d-models" class="switch__input">
+													<div class="switch__group">
+														<span class="switch__icon"></span>
+														<span class="switch__title">Есть 3D модели</span>
 													</div>
-													<div class="range-field">
-														<span class="range-field__help">До</span>
-														<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
-													</div>
-												</div>
-												<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
+												</label>
 											</div>
-										</div>
-									</div>
-									<div class="catalog-filter__block">
-										<button class="catalog-filter__trigger">
-											<span>Высота <span>См</span></span>
-										</button>
-										<div class="catalog-filter__dropdown">
-											<div class="catalog-filter__range">
-												<div class="catalog-filter__range-inner">
-													<div class="range-field">
-														<span class="range-field__help">От</span>
-														<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
-													</div>
-													<div class="range-field">
-														<span class="range-field__help">До</span>
-														<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="160">
+											<div class="catalog-filter__block is--open">
+												<button class="catalog-filter__trigger">
+													<span>Группа</span>
+													<!-- <span class="catalog-filter__trigger--clear">Сбросить</span> -->
+												</button>
+												<div class="catalog-filter__dropdown" style="display: block;">
+													<div class="catalog-filter__checkboxes">
+														<div class="square-checkbox catalog-filter__checkbox">
+															<input type="checkbox" class="square-checkbox__input" id="filter-group-01">
+															<label for="filter-group-01" class="square-checkbox__group">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Ветки деревьев</span>
+															</label>
+														</div>
+														<div class="square-checkbox catalog-filter__checkbox">
+															<input type="checkbox" class="square-checkbox__input" id="filter-group-02">
+															<label for="filter-group-02" class="square-checkbox__group">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Газонные коврики/мох</span>
+															</label>
+														</div>
+														<div class="square-checkbox catalog-filter__checkbox">
+															<input type="checkbox" class="square-checkbox__input" id="filter-group-03">
+															<label for="filter-group-03" class="square-checkbox__group">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Горшечные растения</span>
+															</label>
+														</div>
+														<div class="square-checkbox catalog-filter__checkbox">
+															<input type="checkbox" class="square-checkbox__input" id="filter-group-04">
+															<label for="filter-group-04" class="square-checkbox__group">
+																<span class="square-checkbox__icon"></span>
+																<span class="square-checkbox__title">Кактусы</span>
+															</label>
+														</div>
 													</div>
 												</div>
-												<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
+											</div>
+											<div class="catalog-filter__block is--open">
+												<button class="catalog-filter__trigger">
+													<span>Цена <span>Руб.</span></span>
+												</button>
+												<div class="catalog-filter__dropdown" style="display: block;">
+													<div class="catalog-filter__range">
+														<div class="catalog-filter__range-inner">
+															<div class="range-field">
+																<span class="range-field__help">От</span>
+																<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+															</div>
+															<div class="range-field">
+																<span class="range-field__help">До</span>
+																<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
+															</div>
+														</div>
+														<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
+													</div>
+												</div>
+											</div>
+											<div class="catalog-filter__block">
+												<button class="catalog-filter__trigger">
+													<span>Высота <span>См</span></span>
+												</button>
+												<div class="catalog-filter__dropdown">
+													<div class="catalog-filter__range">
+														<div class="catalog-filter__range-inner">
+															<div class="range-field">
+																<span class="range-field__help">От</span>
+																<input type="number" id="range-height-min" class="range-field__input range-field__input--min" placeholder="0">
+															</div>
+															<div class="range-field">
+																<span class="range-field__help">До</span>
+																<input type="number" id="range-height-max" class="range-field__input range-field__input--max" placeholder="160">
+															</div>
+														</div>
+														<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -495,12 +549,12 @@
 											<span class="c-sort__title">Вид</span>
 											<div class="c-sort__controls c-sort-view">
 												<div class="c-sort-view__controls">
-													<button class="c-sort-view__control">
+													<button class="c-sort-view__control" data-id="0">
 														<svg>
 															<use xlink:href="img/sprite.svg#icon-view-01"></use>
 														</svg>
 													</button>
-													<button class="c-sort-view__control is--active">
+													<button class="c-sort-view__control is--active" data-id="1">
 														<svg>
 															<use xlink:href="img/sprite.svg#icon-view-02"></use>
 														</svg>
@@ -516,112 +570,6 @@
 											</svg>
 											<span>Параметры</span>
 										</button>
-										<div class="catalog-filter c-filter-trigger__dropdown">
-											<form action="#" class="catalog-filter__form">
-												<div class="catalog-filter__block">
-													<h3 class="catalog-filter__heading">Параметры</h3>
-													<label for="switch-3d-models" class="switch catalog-filter__switch">
-														<input type="checkbox" id="switch-3d-models" class="switch__input">
-														<div class="switch__group">
-															<span class="switch__icon"></span>
-															<span class="switch__title">Есть 3D модели</span>
-														</div>
-													</label>
-												</div>
-												<div class="catalog-filter__block is--open">
-													<button class="catalog-filter__trigger">
-														<span>Группа</span>
-														<!-- <span class="catalog-filter__trigger--clear">Сбросить</span> -->
-													</button>
-													<div class="catalog-filter__dropdown" style="display: block;">
-														<div class="catalog-filter__checkboxes">
-															<div class="square-checkbox catalog-filter__checkbox">
-																<input type="checkbox" class="square-checkbox__input" id="filter-group-01">
-																<label for="filter-group-01" class="square-checkbox__group">
-																	<span class="square-checkbox__icon"></span>
-																	<span class="square-checkbox__title">Ветки деревьев</span>
-																</label>
-															</div>
-															<div class="square-checkbox catalog-filter__checkbox">
-																<input type="checkbox" class="square-checkbox__input" id="filter-group-02">
-																<label for="filter-group-02" class="square-checkbox__group">
-																	<span class="square-checkbox__icon"></span>
-																	<span class="square-checkbox__title">Газонные коврики/мох</span>
-																</label>
-															</div>
-															<div class="square-checkbox catalog-filter__checkbox">
-																<input type="checkbox" class="square-checkbox__input" id="filter-group-03">
-																<label for="filter-group-03" class="square-checkbox__group">
-																	<span class="square-checkbox__icon"></span>
-																	<span class="square-checkbox__title">Горшечные растения</span>
-																</label>
-															</div>
-															<div class="square-checkbox catalog-filter__checkbox">
-																<input type="checkbox" class="square-checkbox__input" id="filter-group-04">
-																<label for="filter-group-04" class="square-checkbox__group">
-																	<span class="square-checkbox__icon"></span>
-																	<span class="square-checkbox__title">Кактусы</span>
-																</label>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="catalog-filter__block is--open">
-													<button class="catalog-filter__trigger">
-														<span>Цена <span>Руб.</span></span>
-													</button>
-													<div class="catalog-filter__dropdown" style="display: block;">
-														<div class="catalog-filter__range">
-															<div class="catalog-filter__range-inner">
-																<div class="range-field">
-																	<span class="range-field__help">От</span>
-																	<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
-																</div>
-																<div class="range-field">
-																	<span class="range-field__help">До</span>
-																	<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
-																</div>
-															</div>
-															<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
-														</div>
-													</div>
-												</div>
-												<div class="catalog-filter__block">
-													<button class="catalog-filter__trigger">
-														<span>Высота <span>См</span></span>
-													</button>
-													<div class="catalog-filter__dropdown">
-														<div class="catalog-filter__range">
-															<div class="catalog-filter__range-inner">
-																<div class="range-field">
-																	<span class="range-field__help">От</span>
-																	<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
-																</div>
-																<div class="range-field">
-																	<span class="range-field__help">До</span>
-																	<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="160">
-																</div>
-															</div>
-															<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
-														</div>
-													</div>
-												</div>
-												<div class="catalog-filter__controls">
-													<button class="catalog-filter__btn btn btn--md">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-check"></use>
-														</svg>
-														<span>Применить</span>
-													</button>
-													<button class="catalog-filter__btn btn btn--md btn--normal btn--white">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-restore"></use>
-														</svg>
-														<span>Сбросить</span>
-													</button>
-												</div>
-											</form>
-										</div>
 									</div>
 								</div>
 								<div class="catalog-sort__mobile c-sort">
@@ -629,12 +577,12 @@
 										<span class="c-sort__title">Вид</span>
 										<div class="c-sort__controls c-sort-view">
 											<div class="c-sort-view__controls">
-												<button class="c-sort-view__control">
+												<button class="c-sort-view__control" data-id="0">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-view-01"></use>
 													</svg>
 												</button>
-												<button class="c-sort-view__control is--active">
+												<button class="c-sort-view__control is--active" data-id="1">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-view-02"></use>
 													</svg>
@@ -700,23 +648,105 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см. <span>70</span></span>
+												<span class="product-card__value">Артикул <span>10.40402N</span></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+									</div>
+								</article>
+								<article class="product-card catalog__item">
+									<div class="product-card__img-wrap">
+										<div class="product-card__statuses">
+											<span class="product-card__status">NEW</span>
+											<span class="product-card__status product-card__status--red">Акция</span>
 										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
+										<div class="product-card__controls">
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-favorite"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Необходимо авторизоваться для использования функционала</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-box"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать 3D модель<br>Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-image"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
+											</div>
+											<div class="product-card__control">
+												<a href="#" class="product-card__control-trigger is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-download"></use>
+													</svg>
+												</a>
+												<div class="product-card__control-dropdown">Скачать превью-изображение</div>
+											</div>
+										</div>
+										<div class="product-card__controls product-card__controls--bottom">
+											<div class="product-card__control">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-eye"></use>
+													</svg>
+												</button>
+												<div class="product-card__control-dropdown">Быстрый просмотр</div>
+											</div>
+										</div>
+										<a href="#" class="product-card__img">
+											<img src="img/catalog-01.png" alt="Image">
 										</a>
+									</div>
+									<div class="product-card__body">
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см. <span>70</span></span>
+												<span class="product-card__value">Артикул <span>10.40402N</span></span>
+											</div>
+										</div>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
+										</div>
 									</div>
 								</article>
 								<article class="product-card catalog__item">
