@@ -214,24 +214,24 @@
 					</div>
 					<div class="catalog-sections page-top__catalog">
 						<div class="catalog-sections__wrapper">
-							<a class="catalog-sections__item" href="#">Деревья</a>
-							<a class="catalog-sections__item is--active" href="#">Растения, кусты, мох и трава</a>
-							<a class="catalog-sections__item" href="#">Ампельные растения</a>
-							<a class="catalog-sections__item" href="#">Кашпо</a>
-							<a class="catalog-sections__item" href="#">Дизайнерские композиции</a>
-							<a class="catalog-sections__item" href="#">Цветы</a>
-							<a class="catalog-sections__item" href="#">Товары с 3D-моделями</a>
-							<a class="catalog-sections__item" href="#">Растения и мох для Фитостен</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="1">Деревья</a>
+							<a class="catalog-sections__item is--active" href="#" data-sections-id="2">Растения, кусты, мох и трава</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="3">Ампельные растения</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="4">Кашпо</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="5">Дизайнерские композиции</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="6">Цветы</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="7">Товары с 3D-моделями</a>
+							<a class="catalog-sections__item" href="#" data-sections-id="8">Растения и мох для Фитостен</a>
 						</div>
 						<select class="catalog-sections__select">
-							<option value="0">Деревья</option>
-							<option value="1">Растения, кусты, мох и трава</option>
-							<option value="2">Ампельные растения</option>
-							<option value="3">Кашпо</option>
-							<option value="4">Дизайнерские композиции</option>
-							<option value="5">Цветы</option>
-							<option value="6">Товары с 3D-моделями</option>
-							<option value="7">Растения и мох для Фитостен</option>
+							<option value="1">Деревья</option>
+							<option value="2" selected>Растения, кусты, мох и трава</option>
+							<option value="3">Ампельные растения</option>
+							<option value="4">Кашпо</option>
+							<option value="5">Дизайнерские композиции</option>
+							<option value="6">Цветы</option>
+							<option value="7">Товары с 3D-моделями</option>
+							<option value="8">Растения и мох для Фитостен</option>
 						</select>
 					</div>
 				</div>
@@ -503,17 +503,21 @@
 											<div class="c-sort__controls">
 												<div class="c-sort__btns c-sort-btns">
 													<div class="c-sort-btns__controls">
-														<button class="c-sort-btns__control is--active">Названию</button>
-														<button class="c-sort-btns__control">Популярности</button>
-														<button class="c-sort-btns__control">Цене</button>
-														<button class="c-sort-btns__control">Обновлению</button>
+														<button class="c-sort-btns__control is--active" data-sort-id="name">Названию</button>
+														<button class="c-sort-btns__control" data-sort-id="popularity">Популярности</button>
+														<button class="c-sort-btns__control" data-sort-id="price">Цене</button>
+														<button class="c-sort-btns__control" data-sort-id="update">Обновлению</button>
 													</div>
-													<div class="c-sort-btns__select default-select">
-														<select class="js-select">
-															<option value="0">Названию по возрастанию</option>
-															<option value="1">Названию по убыванию</option>
-															<option value="2">Популярности по возрастанию</option>
-															<option value="3">Все</option>
+													<div class="c-sort-btns__select">
+														<select>
+															<option value="name:asc">Названию по возрастанию</option>
+															<option value="name:desc">Названию по убыванию</option>
+															<option value="popularity:asc">Популярности по возрастанию</option>
+															<option value="popularity:desc">Популярности по убыванию</option>
+															<option value="price:asc">Цене по возрастанию</option>
+															<option value="price:desc">Цене по убыванию</option>
+															<option value="update:asc">Обновлению по возрастанию</option>
+															<option value="update:desc">Обновлению по убыванию</option>
 														</select>
 													</div>
 												</div>
