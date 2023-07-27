@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TREEZ - Карта сайта</title>
-	<meta property="og:title" content="TREEZ - Карта сайта">
+	<title>TREEZ - Поиск</title>
+	<meta property="og:title" content="TREEZ - Поиск">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="TREEZ - Карта сайта">
+	<meta property="og:site_name" content="TREEZ - Поиск">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -19,7 +19,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header header--transparent" id="header"> <!-- for transparent header add class "header--transparent" -->
+		<header class="header" id="header"> <!-- for transparent header add class "header--transparent" -->
 			<div class="header__fixed">
 				<div class="container">
 					<div class="header__wrapper">
@@ -193,58 +193,34 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- page top -->
-			<section class="page-top" id="page-top" style="background-image: url(img/catalog-bg.jpg);">
+			<!-- global search -->
+			<section class="global-search" id="global-search">
 				<div class="container">
-					<div class="page-top__body">
-						<h1 class="page-top__heading">Карта сайта</h1>
-					</div>
-					<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-						<ol class="breadcrumb__list">
-							<li class="breadcrumb__item">
-								<a href="index.html" class="breadcrumb__link">Главная</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="sitemap.html" class="breadcrumb__link">Карта сайта</a>
-							</li>
-						</ol>
+					<div class="global-search__wrapper">
+						<form action="#" class="global-search__form">
+							<div class="global-search__control">
+								<input type="text" class="global-search__input" placeholder="Введите текст для поиска" value="Деревья EFFECTORY">
+								<button class="global-search__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+									<span>Найти</span>
+								</button>
+							</div>
+							<span class="global-search__result">по вашему запросу найдено <span>0</span> товаров</span>
+						</form>
+						<div class="global-search__empty">
+							<h3 class="global-search__heading">
+								К сожалению, по вашему запросу ничего<br>
+								не найдено.<br>
+								Попробуйте уточнить запрос<br>
+								или воспользуйтесь <a href="catalog.html">каталогом</a>.
+							</h3>
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- end of page top -->
-			<!-- site nav -->
-			<section class="site-nav" id="site-nav">
-				<div class="container">
-					<div class="site-nav__block">
-						<nav class="site-nav__nav">
-							<ul class="site-nav__list">
-								<li class="site-nav__item">
-									<a href="index.html" class="site-nav__link" target="_blank">Главная (в данный момент пустая)</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="catalog.html" class="site-nav__link" target="_blank">Каталог</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="alphabet.html" class="site-nav__link" target="_blank">Алфавитный указатель</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="products.html" class="site-nav__link" target="_blank">Категории</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="products-no-hubs.html" class="site-nav__link" target="_blank">Категории (без хабов)</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="search.html" class="site-nav__link" target="_blank">Поиск</a>
-								</li>
-								<li class="site-nav__item">
-									<a href="search-empty.html" class="site-nav__link" target="_blank">Поиск (ничего не найдено)</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</section>
-			<!-- end of site nav -->
+			<!-- end of global search -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

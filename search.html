@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TREEZ - Растения, кусты, мох и трава</title>
-	<meta property="og:title" content="TREEZ - Растения, кусты, мох и трава">
+	<title>TREEZ - Поиск</title>
+	<meta property="og:title" content="TREEZ - Поиск">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="TREEZ - Растения, кусты, мох и трава">
+	<meta property="og:site_name" content="TREEZ - Поиск">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
@@ -19,7 +19,7 @@
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header header--transparent" id="header"> <!-- for transparent header add class "header--transparent" -->
+		<header class="header" id="header"> <!-- for transparent header add class "header--transparent" -->
 			<div class="header__fixed">
 				<div class="container">
 					<div class="header__wrapper">
@@ -193,187 +193,30 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- page top -->
-			<section class="page-top page-top--no-pb" id="page-top" style="background-image: url(img/catalog-bg.jpg);">
+			<!-- global search -->
+			<section class="global-search" id="global-search">
 				<div class="container">
-					<div class="page-top__body">
-						<h1 class="page-top__heading">Растения, кусты, мох и трава <small>219</small></h1>
-					</div>
-					<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-						<ol class="breadcrumb__list">
-							<li class="breadcrumb__item">
-								<a href="index.html" class="breadcrumb__link">Главная</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="catalog.html" class="breadcrumb__link">Каталог</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="products.html" class="breadcrumb__link">Растения, кусты, мох и трава</a>
-							</li>
-						</ol>
-					</div>
-					<div class="catalog-sections page-top__catalog">
-						<div class="catalog-sections__wrapper">
-							<a class="catalog-sections__item" href="#" data-sections-id="1">Деревья</a>
-							<a class="catalog-sections__item is--active" href="#" data-sections-id="2">Растения, кусты, мох и трава</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="3">Ампельные растения</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="4">Кашпо</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="5">Дизайнерские композиции</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="6">Цветы</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="7">Товары с 3D-моделями</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="8">Растения и мох для Фитостен</a>
-						</div>
-						<select class="catalog-sections__select">
-							<option value="1">Деревья</option>
-							<option value="2" selected>Растения, кусты, мох и трава</option>
-							<option value="3">Ампельные растения</option>
-							<option value="4">Кашпо</option>
-							<option value="5">Дизайнерские композиции</option>
-							<option value="6">Цветы</option>
-							<option value="7">Товары с 3D-моделями</option>
-							<option value="8">Растения и мох для Фитостен</option>
-						</select>
+					<div class="global-search__wrapper">
+						<form action="#" class="global-search__form">
+							<div class="global-search__control">
+								<input type="text" class="global-search__input" placeholder="Введите текст для поиска" value="Деревья">
+								<button class="global-search__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+									<span>Найти</span>
+								</button>
+							</div>
+							<span class="global-search__result">по вашему запросу найдено <span>145</span> товаров</span>
+						</form>
 					</div>
 				</div>
 			</section>
-			<!-- end of page top -->
-			<!-- page search -->
-			<div class="page-search">
-				<div class="container">
-					<div class="page-search__wrapper">
-						<form action="#" class="page-search__form">
-							<div class="page-search__block">
-								<input type="text" class="page-search__input" placeholder="Введите название или артикул">
-								<span class="page-search__help">например, <a href="#">Кипарис</a></span>
-							</div>
-							<button class="page-search__btn">
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-search"></use>
-								</svg>
-							</button>
-						</form>
-						<div class="c-pagination page-search__pagination">
-							<ul class="c-pagination__list">
-								<li class="c-pagination__item c-pagination__item--arrow is--hiddn">
-									<button class="c-pagination__btn">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-										</svg>
-									</button>
-								</li>
-								<li class="c-pagination__item is--active">
-									<button class="c-pagination__btn">1</button>
-								</li>
-								<li class="c-pagination__item">
-									<button class="c-pagination__btn">2</button>
-								</li>
-								<li class="c-pagination__item">
-									<button class="c-pagination__btn">3</button>
-								</li>
-								<li class="c-pagination__item">
-									<button class="c-pagination__btn">4</button>
-								</li>
-								<li class="c-pagination__item c-pagination__item--arrow">
-									<button class="c-pagination__btn">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-										</svg>
-									</button>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end of page search -->
+			<!-- end of global search -->
 			<!-- catalog -->
 			<div class="catalog" id="catalog">
 				<div class="container">
-					<div class="catalog__hubs catalog-hubs">
-						<div class="catalog-hubs__slider">
-							<div class="catalog-hubs__slider-wrapper">
-								<div class="swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-01.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Искусственные деревья для интерьера</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-02.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Искусственные деревья для дома</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-03.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Искусственные самшиты для улицы</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-04.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Драцены</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-01.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Искусственные деревья среднего размера</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-05.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Стриженные формы</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-06.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Лиственные деревья</span>
-											</a>
-										</div>
-										<div class="swiper-slide">
-											<a href="#" class="catalog-hubs__item">
-												<picture class="catalog-hubs__img">
-													<img src="img/categories-04.jpg" alt="Image">
-												</picture>
-												<span class="catalog-hubs__name">Драцены</span>
-											</a>
-										</div>
-									</div>
-								</div>
-								<button class="swiper-button-prev" aria-label="Назад">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-prev-short"></use>
-									</svg>
-								</button>
-								<button class="swiper-button-next" aria-label="Далее">
-									<svg class="swiper-button-icon">
-										<use xlink:href="img/sprite.svg#icon-arrow-next-short"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="catalog__wrap catalog__wrap--border">
+					<div class="catalog__wrap">
 						<div class="catalog__left">
 							<div class="catalog-filter">
 								<form action="#" class="catalog-filter__form">
