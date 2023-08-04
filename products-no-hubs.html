@@ -400,7 +400,7 @@
 														<div class="color-checkbox catalog-filter__color">
 															<input type="checkbox" class="color-checkbox__input" id="filter-color-01">
 															<label for="filter-color-01" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon color-checkbox__icon--dark" style="--color: #FFFFFF;">
+																<span class="color-checkbox__icon color-checkbox__icon--dark color-checkbox__icon--white" style="--color: #FFFFFF;">
 																	<svg>
 																		<use xlink:href="img/sprite.svg#icon-check"></use>
 																	</svg>
@@ -1362,6 +1362,104 @@
 		</a>
 	</div>
 	<!-- end of wrapper -->
+	<!-- popups -->
+	<div class="popup fixed" id="popup-3d-models">
+		<div class="popup__wrap">
+			<div class="popup__wrapper">
+				<button class="popup__close-btn popup__close" aria-label="Закрыть">
+					<svg class="popup__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="popup__content">
+					<h3 class="popup__heading">Уважаемый User Name</h3>
+					<p class="popup__description">
+						Для получения доступа к 3D моделям отправьте запрос.
+						<br><br>
+						Наши менеджеры его обработают.
+					</p>
+					<div class="popup__buttons">
+						<button class="popup__btn">Отправить запрос</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup fixed" id="popup-3d-models-format">
+		<div class="popup__wrap">
+			<div class="popup__wrapper">
+				<button class="popup__close-btn popup__close" aria-label="Закрыть">
+					<svg class="popup__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="popup__content">
+					<h3 class="popup__heading">Выберите формат <br>3D модели</h3>
+					<div class="popup__buttons">
+						<button class="popup__btn">
+							<span>3ds max</span>
+							<small>Vray 1.5</small>
+						</button>
+						<button class="popup__btn">
+							<span>3ds max</span>
+							<small>Corona renderer 5</small>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup fixed" id="popup-png">
+		<div class="popup__wrap">
+			<div class="popup__wrapper">
+				<button class="popup__close-btn popup__close" aria-label="Закрыть">
+					<svg class="popup__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="popup__content">
+					<h3 class="popup__heading">Уважаемый User Name</h3>
+					<p class="popup__description">
+						Для получения доступа к изображениям для коллажей (PNG) отправьте запрос.
+						<br><br>
+						Наши менеджеры его обработают.
+					</p>
+					<div class="popup__buttons">
+						<button class="popup__btn">Отправить запрос</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup fixed" id="popup-png-format">
+		<div class="popup__wrap">
+			<div class="popup__wrapper">
+				<button class="popup__close-btn popup__close" aria-label="Закрыть">
+					<svg class="popup__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+					</svg>
+				</button>
+				<div class="popup__content">
+					<h3 class="popup__heading">Выберите и скачайте материалы</h3>
+					<div class="popup__buttons">
+						<button class="popup__btn">
+							<span>Изображения в формате JPG</span>
+							<small>Для превью</small>
+						</button>
+						<button class="popup__btn">
+							<span>Изображения в формате JPG</span>
+							<small>В максимальном разрешении</small>
+						</button>
+						<button class="popup__btn">
+							<span>Изображения в формате PNG</span>
+							<small>С прозрачным фоном</small>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of popups -->
 	<!-- modal -->
 	<div class="modal fixed" id="modal-auth">
 		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
