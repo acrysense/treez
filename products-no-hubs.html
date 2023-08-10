@@ -294,17 +294,14 @@
 							<div class="catalog-filter">
 								<form action="#" class="catalog-filter__form">
 									<div class="catalog-filter__holder">
-										<div class="catalog-filter__top">
-											<button class="catalog-filter__close">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-close"></use>
-												</svg>
-												<span>Скрыть</span>
-											</button>
-										</div>
+										<button class="catalog-filter__close">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+											<span>Скрыть</span>
+										</button>
 										<div class="catalog-filter__main">
 											<div class="catalog-filter__block">
-												<h3 class="catalog-filter__heading">Параметры</h3>
 												<label for="switch-3d-models" class="switch catalog-filter__switch">
 													<input type="checkbox" id="switch-3d-models" class="switch__input">
 													<div class="switch__group">
@@ -316,36 +313,136 @@
 											<div class="catalog-filter__block is--open">
 												<button class="catalog-filter__trigger">
 													<span>Группа</span>
-													<!-- <span class="catalog-filter__trigger--clear">Сбросить</span> -->
+												</button>
+												<div class="catalog-filter__dropdown" style="display: block;">
+													<div class="catalog-filter__checkboxes">
+														<div class="catalog-filter__checkbox-group">
+															<div class="catalog-filter__checkbox-inner">
+																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
+																	<label for="filter-effectory-all" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
+																	</label>
+																</div>
+																<button class="catalog-filter__checkbox-trigger"></button>
+															</div>
+															<div class="catalog-filter__checkbox-dropdown">
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-01">
+																	<label for="filter-effectory-01" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ Effectory - Beton</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-02">
+																	<label for="filter-effectory-02" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ Effectory - Crystal</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-03">
+																	<label for="filter-effectory-03" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ Effectory - Gloss</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-04">
+																	<label for="filter-effectory-04" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ Effectory - Metal</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="catalog-filter__checkbox-group">
+															<div class="catalog-filter__checkbox-inner">
+																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-group-all">
+																	<label for="filter-group-all" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
+																	</label>
+																</div>
+																<button class="catalog-filter__checkbox-trigger"></button>
+															</div>
+															<div class="catalog-filter__checkbox-dropdown">
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-01">
+																	<label for="filter-ergo-01" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Comb</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-02">
+																	<label for="filter-ergo-02" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Cork</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-03">
+																	<label for="filter-ergo-03" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Graphics</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-04">
+																	<label for="filter-ergo-04" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Diamond</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-05">
+																	<label for="filter-ergo-05" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Jet</span>
+																	</label>
+																</div>
+																<div class="square-checkbox catalog-filter__checkbox">
+																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-06">
+																	<label for="filter-ergo-06" class="square-checkbox__group">
+																		<span class="square-checkbox__icon"></span>
+																		<span class="square-checkbox__title">TREEZ ERGO Just</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="catalog-filter__block is--open">
+												<button class="catalog-filter__trigger">
+													<span>Материал</span>
+													<span class="catalog-filter__clear is--active">Сбросить</span>
 												</button>
 												<div class="catalog-filter__dropdown" style="display: block;">
 													<div class="catalog-filter__checkboxes">
 														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-group-01">
-															<label for="filter-group-01" class="square-checkbox__group">
+															<input type="checkbox" class="square-checkbox__input" id="filter-materias-01">
+															<label for="filter-materias-01" class="square-checkbox__group">
 																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Ветки деревьев</span>
+																<span class="square-checkbox__title">Полистоун</span>
 															</label>
 														</div>
 														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-group-02" disabled>
-															<label for="filter-group-02" class="square-checkbox__group">
+															<input type="checkbox" class="square-checkbox__input" id="filter-materias-02" checked>
+															<label for="filter-materias-02" class="square-checkbox__group">
 																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Газонные коврики/мох</span>
+																<span class="square-checkbox__title">Композитный пластик</span>
 															</label>
 														</div>
 														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-group-03">
-															<label for="filter-group-03" class="square-checkbox__group">
+															<input type="checkbox" class="square-checkbox__input" id="filter-materias-03" disabled>
+															<label for="filter-materias-03" class="square-checkbox__group">
 																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Горшечные растения</span>
-															</label>
-														</div>
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-group-04">
-															<label for="filter-group-04" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Кактусы</span>
+																<span class="square-checkbox__title">Кортеновская сталь</span>
 															</label>
 														</div>
 													</div>
@@ -624,8 +721,13 @@
 								<article class="product-card catalog__item">
 									<div class="product-card__img-wrap">
 										<div class="product-card__statuses">
-											<span class="product-card__status">NEW</span>
-											<span class="product-card__status product-card__status--red">Акция</span>
+											<div class="product-card__status-group">
+												<span class="product-card__status">NEW</span>
+											</div>
+											<div class="product-card__status-group c-dropdown">
+												<span class="product-card__status product-card__status--red">Акция</span>
+												<div class="product-card__control-dropdown c-dropdown__container">Акция! — Насладись самым большим размером по цене среднего!</div>
+											</div>
 										</div>
 										<div class="product-card__controls">
 											<div class="product-card__control c-dropdown">
@@ -637,7 +739,7 @@
 												<div class="product-card__control-dropdown c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
@@ -645,7 +747,7 @@
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -663,7 +765,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -682,13 +784,16 @@
 												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
 											</div>
 											<div class="product-card__info">
-												<span class="product-card__value">Размер см. <span>70</span></span>
-												<span class="product-card__value">Артикул <span>10.40402N</span></span>
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
 										<div class="product-card__block">
 											<div class="product-card__info">
-												<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
 											<a href="#" class="product-card__btn btn btn--sm btn--border">
 												<svg>
@@ -702,8 +807,13 @@
 								<article class="product-card catalog__item">
 									<div class="product-card__img-wrap">
 										<div class="product-card__statuses">
-											<span class="product-card__status">NEW</span>
-											<span class="product-card__status product-card__status--red">Акция</span>
+											<div class="product-card__status-group">
+												<span class="product-card__status">NEW</span>
+											</div>
+											<div class="product-card__status-group c-dropdown">
+												<span class="product-card__status product-card__status--red">Акция</span>
+												<div class="product-card__control-dropdown c-dropdown__container">Акция! — Насладись самым большим размером по цене среднего!</div>
+											</div>
 										</div>
 										<div class="product-card__controls">
 											<div class="product-card__control c-dropdown">
@@ -715,7 +825,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
@@ -723,7 +833,7 @@
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -741,7 +851,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -760,13 +870,16 @@
 												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
 											</div>
 											<div class="product-card__info">
-												<span class="product-card__value">Размер см. <span>70</span></span>
-												<span class="product-card__value">Артикул <span>10.40402N</span></span>
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
 										<div class="product-card__block">
 											<div class="product-card__info">
-												<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
 											<a href="#" class="product-card__btn btn btn--sm btn--border">
 												<svg>
@@ -789,7 +902,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
@@ -797,7 +910,7 @@
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -815,7 +928,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -828,23 +941,30 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Алоказия</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Алоказия</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
-										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
-										</a>
 									</div>
 								</article>
 								<article class="product-card catalog__item">
@@ -859,7 +979,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -877,7 +997,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -890,23 +1010,30 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Алоказия Калидора</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Алоказия Калидора</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
-										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
-										</a>
 									</div>
 								</article>
 								<article class="product-card catalog__item">
@@ -921,7 +1048,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -939,7 +1066,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -952,23 +1079,30 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Алоказия Калидора куст</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Алоказия Калидора куст</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
-										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
-										</a>
 									</div>
 								</article>
 								<article class="product-card catalog__item">
@@ -983,7 +1117,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -1001,7 +1135,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1014,29 +1148,38 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Алоказия Калидора куст большой</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Алоказия Калидора куст большой</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
-										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
-										</a>
 									</div>
 								</article>
 								<article class="product-card catalog__item">
 									<div class="product-card__img-wrap">
 										<div class="product-card__statuses">
-											<span class="product-card__status">NEW</span>
+											<div class="product-card__status-group">
+												<span class="product-card__status">NEW</span>
+											</div>
 										</div>
 										<div class="product-card__controls">
 											<div class="product-card__control c-dropdown">
@@ -1048,7 +1191,7 @@
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
 											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
@@ -1066,7 +1209,7 @@
 										</div>
 										<div class="product-card__controls product-card__controls--bottom">
 											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden">
+												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1079,23 +1222,30 @@
 										</a>
 									</div>
 									<div class="product-card__body">
-										<span class="product-card__help">Искусственное дерево</span>
-										<div class="product-card__name-wrap">
-											<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										<div class="product-card__block">
+											<span class="product-card__help">Искусственное дерево</span>
+											<div class="product-card__name-wrap">
+												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+											</div>
+											<div class="product-card__info">
+												<span class="product-card__value">Размер см <b>70</b></span>
+												<span class="product-card__value">Артикул <b>10.40402N</b></span>
+												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											</div>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Размер см. <span>70</span></span>
-											<span class="product-card__value">Артикул <span>10.40402N</span></span>
+										<div class="product-card__block">
+											<div class="product-card__info">
+												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+											</div>
+											<a href="#" class="product-card__btn btn btn--sm btn--border">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-cart"></use>
+												</svg>
+												<span>Купить</span>
+											</a>
 										</div>
-										<div class="product-card__info">
-											<span class="product-card__value">Цена <span>12 363,30 Р.</span></span>
-										</div>
-										<a href="#" class="product-card__btn btn btn--sm btn--border">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-cart"></use>
-											</svg>
-											<span>Купить</span>
-										</a>
 									</div>
 								</article>
 							</div>
@@ -1514,7 +1664,7 @@
 											<label for="auth-password" class="input-field__label">пароль *</label>
 										</div>
 										<div class="modal__inner">
-											<div class="square-checkbox modal__checkbox">
+											<div class="square-checkbox square-checkbox--default modal__checkbox">
 												<input type="checkbox" class="square-checkbox__input" id="save-data">
 												<label for="save-data" class="square-checkbox__group">
 													<span class="square-checkbox__icon"></span>
@@ -1620,14 +1770,14 @@
 											</p>
 										</div>
 										<div class="modal__checkboxes">
-											<div class="square-checkbox square-checkbox--sm modal__checkbox">
+											<div class="square-checkbox square-checkbox--default square-checkbox--sm modal__checkbox">
 												<input type="checkbox" class="square-checkbox__input" id="subscribe-email">
 												<label for="subscribe-email" class="square-checkbox__group">
 													<span class="square-checkbox__icon"></span>
 													<span class="square-checkbox__title">Подписаться на рассылку</span>
 												</label>
 											</div>
-											<div class="square-checkbox square-checkbox--sm modal__checkbox">
+											<div class="square-checkbox square-checkbox--default square-checkbox--sm modal__checkbox">
 												<input type="checkbox" class="square-checkbox__input" id="conditions-data" required>
 												<label for="conditions-data" class="square-checkbox__group">
 													<span class="square-checkbox__icon"></span>
@@ -1649,6 +1799,243 @@
 		<div class="modal__overlay"></div>
 	</div>
 	<!-- end of modal -->
+	<!-- quick view -->
+	<div class="quick-view fixed" id="quick-view">
+		<div class="quick-view__wrap">
+			<div class="quick-view__wrapper">
+				<div class="quick-view__top">
+					<h3 class="quick-view__heading">Мини-садик с Мини-Орхидеей Фаленопсис с суккулентами в стеклянной сфере</h3>
+					<button class="quick-view__close" aria-label="Закрыть">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close-thin"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="quick-view__content">
+					<div class="quick-view__main">
+						<div class="quick-view__left">
+							<div class="quick-view__slider">
+								<div class="gallery-main">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-01.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-02.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-03.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-04.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-01.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-05.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-02.png" alt="Image">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<div class="gallery-thumbs">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide is--active" data-index="0">
+											<picture class="swiper-img">
+												<img src="img/catalog-01.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide" data-index="1">
+											<picture class="swiper-img">
+												<img src="img/catalog-02.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-03.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-04.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-01.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-05.png" alt="Image">
+											</picture>
+										</div>
+										<div class="swiper-slide">
+											<picture class="swiper-img">
+												<img src="img/catalog-02.png" alt="Image">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quick-view__right">
+							<div class="quick-view-options">
+								<div class="quick-view-options__wrap">
+									<h3 class="quick-view-options__heading">размер <span>см</span></h3>
+									<div class="quick-view-options__wrapper">
+										<div class="quick-view-options__item">
+											<div class="quick-view-options__item-top">
+												<div class="quick-view-options__left">
+													<span class="quick-view-options__number">60</span>
+												</div>
+												<div class="quick-view-options__right">
+													<div class="quick-view-options__body">
+														<div class="quick-view-options__group">
+															<span class="quick-view-options__text">АРТ. <span>41.3320-02-029-BE-60</span></span>
+															<span class="quick-view-options__text">Размер <b>в-60 см, д-31 см</b></span>
+														</div>
+														<div class="quick-view-options__group quick-view-options__group--right">
+															<span class="quick-view-options__text"><span class="dark">1 шт.</span> 12 168,55 Р.</span>
+															<span class="quick-view-options__text">Включая НДС</span>
+														</div>
+														<div class="quick-view-options__group">
+															<div class="c-quantity quick-view-options__quantity">
+																<div class="c-quantity__wrapper">
+																	<div class="c-quantity__inner">
+																		<button class="c-quantity__btn c-quantity__btn--minus" disabled>–</button>
+																		<input type="number" class="c-quantity__value" value="0">
+																		<button class="c-quantity__btn c-quantity__btn--plus">+</button>
+																	</div>
+																	<button class="c-quantity__basket">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-cart"></use>
+																		</svg>
+																		<span>6</span>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-view-options__item">
+											<div class="quick-view-options__item-top">
+												<div class="quick-view-options__left">
+													<span class="quick-view-options__number">80</span>
+												</div>
+												<div class="quick-view-options__right">
+													<div class="quick-view-options__body">
+														<div class="quick-view-options__group">
+															<span class="quick-view-options__text">АРТ. <span>41.3320-02-029-BE-60</span></span>
+															<span class="quick-view-options__text">Размер <b>в-60 см, д-31 см</b></span>
+														</div>
+														<div class="quick-view-options__group quick-view-options__group--right">
+															<span class="quick-view-options__text"><span class="dark">1 шт.</span> 12 168,55 Р.</span>
+															<span class="quick-view-options__text">Включая НДС</span>
+														</div>
+														<div class="quick-view-options__group">
+															<div class="c-quantity quick-view-options__quantity">
+																<div class="c-quantity__wrapper">
+																	<div class="c-quantity__inner">
+																		<button class="c-quantity__btn c-quantity__btn--minus" disabled>–</button>
+																		<input type="number" class="c-quantity__value" value="0">
+																		<button class="c-quantity__btn c-quantity__btn--plus">+</button>
+																	</div>
+																	<button class="c-quantity__basket">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-cart"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quick-view-options__item">
+											<div class="quick-view-options__item-top">
+												<div class="quick-view-options__left">
+													<span class="quick-view-options__number">100</span>
+												</div>
+												<div class="quick-view-options__right">
+													<div class="quick-view-options__body">
+														<div class="quick-view-options__group">
+															<span class="quick-view-options__text">АРТ. <span>41.3320-02-029-BE-60</span></span>
+															<span class="quick-view-options__text">Размер <b>в-60 см, д-31 см</b></span>
+														</div>
+														<div class="quick-view-options__group quick-view-options__group--right">
+															<span class="quick-view-options__text"><span class="dark">1 шт.</span> 12 168,55 Р.</span>
+															<span class="quick-view-options__text">Включая НДС</span>
+														</div>
+														<div class="quick-view-options__group">
+															<div class="c-quantity quick-view-options__quantity">
+																<div class="c-quantity__wrapper">
+																	<div class="c-quantity__inner">
+																		<button class="c-quantity__btn c-quantity__btn--minus" disabled>–</button>
+																		<input type="number" class="c-quantity__value" value="0">
+																		<button class="c-quantity__btn c-quantity__btn--plus">+</button>
+																	</div>
+																	<button class="c-quantity__basket is--hidden">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-cart"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quick-view__bottom">
+						<div class="quick-view__left">
+							<a href="#" class="quick-view__btn quick-view__btn--wide btn btn--md btn--border">больше деталей</a>
+						</div>
+						<div class="quick-view__right">
+							<div class="quick-view__info">
+								<div class="quick-view__total">
+									<span class="quick-view__text">товаров <span>8</span></span>
+									<span class="quick-view__text">на сумму <span>152 509,04 р.</span></span>
+									<span class="quick-view__text">без <span>стоимости доставки</span></span>
+								</div>
+								<a href="#" class="quick-view__btn btn btn--md btn--icon-white">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-cart"></use>
+									</svg>
+									<span>Купить</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of quick view -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
