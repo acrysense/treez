@@ -241,11 +241,11 @@
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<article class="ideas__item">
-											<a href="#" class="ideas__img ideas-popup-trigger">
+											<div class="ideas__img ideas-popup-trigger">
 												<img src="img/ideas-01.jpg" alt="Image">
 												<div class="ideas__img-inner">
 													<span class="ideas__img-value">3 фото</span>
-													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile">
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
 														<svg>
 															<use xlink:href="img/sprite.svg#icon-info"></use>
 														</svg>
@@ -264,7 +264,15 @@
 														<use xlink:href="img/sprite.svg#icon-info"></use>
 													</svg>
 												</a>
-											</a>
+												<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
 											<div class="ideas__body">
 												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
 											</div>
@@ -272,17 +280,30 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="ideas__item">
-											<a href="#" class="ideas__img ideas-popup-trigger">
+											<div class="ideas__img ideas-popup-trigger">
 												<img src="img/ideas-02.jpg" alt="Image">
 												<div class="ideas__img-inner">
-													<span class="ideas__img-value">3 фото</span>
+													<span class="ideas__img-value">2 фото</span>
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-info"></use>
+														</svg>
+													</div>
 													<div class="ideas__img-icon">
 														<svg>
 															<use xlink:href="img/sprite.svg#icon-zoom"></use>
 														</svg>
 													</div>
 												</div>
-											</a>
+												<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
 											<div class="ideas__body">
 												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
 											</div>
@@ -290,7 +311,7 @@
 									</div>
 									<div class="swiper-slide">
 										<article class="ideas__item">
-											<a href="#" class="ideas__img ideas-popup-trigger">
+											<div class="ideas__img ideas-popup-trigger">
 												<img src="img/ideas-03.jpg" alt="Image">
 												<div class="ideas__img-inner">
 													<span class="ideas__img-value">3 фото</span>
@@ -300,7 +321,7 @@
 														</svg>
 													</div>
 												</div>
-											</a>
+											</div>
 											<div class="ideas__body">
 												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
 											</div>
@@ -512,6 +533,21 @@
 		</a>
 	</div>
 	<!-- end of wrapper -->
+	<!-- ideas tooltip -->
+	<a href="products.html" class="ideas-tooltip" id="ideas-tooltip" target="_blank">
+		<picture class="ideas-tooltip__img">
+			<img src="img/catalog-01.png" alt="Image">
+		</picture>
+		<div class="ideas-tooltip__body">
+			<span class="ideas-tooltip__title">Апельсиновое дерево с плодами</span>
+			<div class="ideas-tooltip__info">
+				<span class="ideas-tooltip__value ideas-tooltip__value--lg">От <b>15 385 Р.</b></span>
+				<span class="ideas-tooltip__value">Высота см. <b>80/100/120</b></span>
+				<span class="ideas-tooltip__value">Артикул <b>10.25402N</b></span>
+			</div>
+		</div>
+	</a>
+	<!-- end of ideas tooltip -->
 	<!-- modal -->
 	<div class="modal fixed" id="modal-auth">
 		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
@@ -718,6 +754,29 @@
 									<div class="ideas-popup__slide">
 										<picture class="ideas-popup__img">
 											<img src="img/ideas-01.jpg" alt="Image">
+											<div class="ideas-popup__img-inner">
+												<div class="ideas-popup__img-icon ideas-popup__img-icon--white ideas-popup__img-icon--mobile products-used-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</div>
+											</div>
+											<a href="products.html" class="ideas__img-bullet" style="top: 23%; left: 20%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
+											<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
 										</picture>
 									</div>
 								</div>
@@ -725,6 +784,21 @@
 									<div class="ideas-popup__slide">
 										<picture class="ideas-popup__img">
 											<img src="img/ideas-02.jpg" alt="Image">
+											<div class="ideas-popup__img-inner">
+												<div class="ideas-popup__img-icon ideas-popup__img-icon--white ideas-popup__img-icon--mobile products-used-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</div>
+											</div>
+											<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
 										</picture>
 									</div>
 								</div>
@@ -756,6 +830,50 @@
 		</div>
 	</div>
 	<!-- end of ideas popup -->
+	<!-- products used -->
+	<div class="products-used" id="products-used">
+		<div class="products-used__wrap">
+			<div class="products-used__wrapper">
+				<div class="products-used__top">
+					<h2 class="products-used__heading">Используемые <br>товары</h2>
+					<button class="products-used__close-btn products-used__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="products-used__items">
+					<a href="products.html" class="products-used-card products-used__item" target="_blank">
+						<picture class="products-used-card__img">
+							<img src="img/catalog-01.png" alt="Image">
+						</picture>
+						<div class="products-used-card__body">
+							<span class="products-used-card__title">Пальма Цикас Мультикрона искусственная многоствольная</span>
+							<div class="products-used-card__info">
+								<span class="products-used-card__value products-used-card__value--lg">От <b>19 521 Р.</b></span>
+								<span class="products-used-card__value">Высота см. <b>150/180/210/240</b></span>
+								<span class="products-used-card__value">Артикул <b>20.1125RD</b></span>
+							</div>
+						</div>
+					</a>
+					<a href="products.html" class="products-used-card products-used__item" target="_blank">
+						<picture class="products-used-card__img">
+							<img src="img/catalog-01.png" alt="Image">
+						</picture>
+						<div class="products-used-card__body">
+							<span class="products-used-card__title">Пальма Цикас Мультикрона искусственная многоствольная</span>
+							<div class="products-used-card__info">
+								<span class="products-used-card__value products-used-card__value--lg">От <b>19 521 Р.</b></span>
+								<span class="products-used-card__value">Высота см. <b>150/180/210/240</b></span>
+								<span class="products-used-card__value">Артикул <b>20.1125RD</b></span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of products used -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
