@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TREEZ - Идеи</title>
+	<meta property="og:title" content="TREEZ - Идеи">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="TREEZ - Идеи">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="header__fixed">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="header__inner">
+							<a href="index.html" class="header__logotype">
+								<img src="img/logotype.png" alt="TREEZ" class="header__logotype-img default">
+								<img src="img/logotype-white.png" alt="TREEZ" class="header__logotype-img white">
+							</a>
+							<ul class="header__contacts header__inner">
+								<li class="header__contacts-item">
+									<a href="tel:84954325813" class="header__contacts-link">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-phone"></use>
+										</svg>
+										<span>8 (495) 432-58-13</span>
+									</a>
+								</li>
+								<li class="header__contacts-item">
+									<a href="tel:88003332941" class="header__contacts-link">
+										<span>8 800 333-29-41</span>
+									</a>
+								</li>
+							</ul>
+							<a href="catalog.html" class="c-catalog header__catalog">
+								<svg class="c-catalog__icon">
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
+								</svg>
+								<span class="c-catalog__title">Каталог</span>
+							</a>
+						</div>
+						<div class="header__inner">
+							<div class="header__inner">
+								<a href="#" class="header__icon-wrap" id="search-toggle">
+									<svg class="header__icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</a>
+								<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
+									<svg class="header__icon">
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+								</a>
+								<a href="#" class="header__icon-wrap header__icon-wrap--active">
+									<svg class="header__icon">
+										<use xlink:href="img/sprite.svg#icon-user"></use>
+									</svg>
+								</a>
+								<a href="#" class="header__icon-wrap">
+									<svg class="header__icon">
+										<use xlink:href="img/sprite.svg#icon-favorite"></use>
+									</svg>
+								</a>
+								<a href="#" class="header__icon-wrap">
+									<svg class="header__icon">
+										<use xlink:href="img/sprite.svg#icon-cart"></use>
+									</svg>
+								</a>
+							</div>
+							<button class="hamburger" id="hamburger-toggle">
+								<span class="hamburger__inner"></span>
+								<span class="hamburger__inner"></span>
+								<span class="hamburger__inner"></span>
+							</button>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="menu" id="menu">
+							<div class="menu__wrap">
+								<div class="menu__wrapper">
+									<div class="menu__block">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link">Каталог</a>
+											</li>
+										</ul>
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link">Деревья <sup class="menu__value">157</sup> <sup class="menu__value menu__value--new">+12</sup></a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">Горшечные растения и кусты <sup class="menu__value">17</sup> <sup class="menu__value menu__value--new">+2</sup></a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">Ампельные растения <sup class="menu__value">157</sup></a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">Кашпо <sup class="menu__value">107</sup> <sup class="menu__value menu__value--new">+20</sup></a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">Дизайнерские композиции <sup class="menu__value">157</sup> <sup class="menu__value menu__value--new">+50</sup></a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">Цветы <sup class="menu__value">65</sup> <sup class="menu__value menu__value--new">+5</sup></a>
+											</li>
+										</ul>
+									</div>
+									<div class="menu__block">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--plug"></a>
+											</li>
+										</ul>
+										<a href="#" class="menu__price-list">
+											<picture class="menu__img">
+												<img src="img/price-list.jpg" alt="Price list">
+											</picture>
+											<span class="menu__help">Прайс-листы и каталоги</span>
+										</a>
+									</div>
+									<div class="menu__block">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--plug"></a>
+											</li>
+										</ul>
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">О Treez</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Партнерам</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Доставка и оплата</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Вопросы и ответы</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Контакты</a>
+											</li>
+										</ul>
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Подарочный сертификат</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link menu__link--sm">Новости</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__search">
+						<div class="search" id="search">
+							<div class="search__wrap">
+								<div class="search__wrapper">
+									<span class="search__subtitle">Быстрый поиск товара</span>
+									<div class="search__main">
+										<form action="#" class="search__controls" data-ajaxblock=".search__dropdown" data-type="GET" data-noloader="true" data-suggest-url="/ajax/quick-search.php" novalidate="true">
+											<input type="text" class="search__input" placeholder="Введите текст для поиска">
+											<button class="search__btn-search">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-search"></use>
+												</svg>
+												<span>Найти</span>
+											</button>
+										</form>
+										<div class="search__dropdown"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__overlay"></div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- ideas -->
+			<section class="ideas" id="ideas">
+				<div class="container">
+					<div class="breadcrumb section-breadcrumb" aria-label="Breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="index.html" class="breadcrumb__link">Главная</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="ideas.html" class="breadcrumb__link">Оригинальные идеи озеленения</a>
+							</li>
+						</ol>
+					</div>
+					<h1 class="ideas__heading">Озеленение ванной комнаты</h1>
+					<div class="ideas__wrapper">
+						<article class="ideas__item">
+							<div class="ideas__img ideas-popup-trigger">
+								<img src="img/ideas-01.jpg" alt="Image">
+								<div class="ideas__img-inner">
+									<span class="ideas__img-value">3 фото</span>
+									<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-info"></use>
+										</svg>
+									</div>
+									<div class="ideas__img-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-zoom"></use>
+										</svg>
+									</div>
+								</div>
+								<a href="products.html" class="ideas__img-bullet" style="top: 23%; left: 20%;" target="_blank">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-plus"></use>
+									</svg>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-info"></use>
+									</svg>
+								</a>
+								<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-plus"></use>
+									</svg>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-info"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="ideas__body">
+								<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+							</div>
+						</article>
+						<article class="ideas__item">
+							<div class="ideas__img ideas-popup-trigger">
+								<img src="img/ideas-02.jpg" alt="Image">
+								<div class="ideas__img-inner">
+									<span class="ideas__img-value">2 фото</span>
+									<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-info"></use>
+										</svg>
+									</div>
+									<div class="ideas__img-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-zoom"></use>
+										</svg>
+									</div>
+								</div>
+								<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-plus"></use>
+									</svg>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-info"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="ideas__body">
+								<h3 class="ideas__title">Тип помещения <a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
+							</div>
+						</article>
+						<article class="ideas__item">
+							<div class="ideas__img ideas-popup-trigger">
+								<img src="img/ideas-03.jpg" alt="Image">
+								<div class="ideas__img-inner">
+									<span class="ideas__img-value">3 фото</span>
+									<div class="ideas__img-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-zoom"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="ideas__body">
+								<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+							</div>
+						</article>
+					</div>
+					<div class="c-share ideas__share">
+						<div class="c-share__wrapper">
+							<button class="c-share__trigger">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-share"></use>
+								</svg>
+							</button>
+							<h4 class="c-share__title">Поделиться</h4>
+							<ul class="c-share__list">
+								<li class="c-share__item">
+									<a href="#" class="c-share__link c-share__link--facebook">
+										<svg class="c-share__icon">
+											<use xlink:href="img/sprite.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-share__item">
+									<a href="#" class="c-share__link c-share__link--twitter">
+										<svg class="c-share__icon">
+											<use xlink:href="img/sprite.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-share__item">
+									<a href="#" class="c-share__link c-share__link--vk">
+										<svg class="c-share__icon">
+											<use xlink:href="img/sprite.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of ideas -->
+			<!-- ideas -->
+			<section class="ideas section-indent" id="ideas-more">
+				<div class="container">
+					<div class="ideas__slider">
+						<div class="section-heading">
+							<div class="section-heading__group">
+								<h2 class="section-heading__title">Другие примеры оформления</h2>
+							</div>
+							<div class="section-heading__group">
+								<div class="swiper-controls section-heading__controls">
+									<button class="swiper-button-prev" aria-label="Назад">
+										<svg class="swiper-button-icon">
+											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+										</svg>
+									</button>
+									<div class="swiper-pagination"></div>
+									<button class="swiper-button-next" aria-label="Далее">
+										<svg class="swiper-button-icon">
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="ideas__slider-wrapper">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="ideas__item">
+											<div class="ideas__img ideas-popup-trigger">
+												<img src="img/ideas-01.jpg" alt="Image">
+												<div class="ideas__img-inner">
+													<span class="ideas__img-value">3 фото</span>
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-info"></use>
+														</svg>
+													</div>
+													<div class="ideas__img-icon">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-zoom"></use>
+														</svg>
+													</div>
+												</div>
+												<a href="products.html" class="ideas__img-bullet" style="top: 23%; left: 20%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+												<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="ideas__body">
+												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="ideas__item">
+											<div class="ideas__img ideas-popup-trigger">
+												<img src="img/ideas-02.jpg" alt="Image">
+												<div class="ideas__img-inner">
+													<span class="ideas__img-value">2 фото</span>
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-info"></use>
+														</svg>
+													</div>
+													<div class="ideas__img-icon">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-zoom"></use>
+														</svg>
+													</div>
+												</div>
+												<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="ideas__body">
+												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="ideas__item">
+											<div class="ideas__img ideas-popup-trigger">
+												<img src="img/ideas-03.jpg" alt="Image">
+												<div class="ideas__img-inner">
+													<span class="ideas__img-value">3 фото</span>
+													<div class="ideas__img-icon">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-zoom"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="ideas__body">
+												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of ideas -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__block footer__block--info">
+						<a href="index.html" class="footer__logotype">
+							<img src="img/logotype-grey.png" alt="TREEZ">
+						</a>
+						<p class="footer__text">
+							<a href="tel:84954325370">8 (495) 432-53-70</a>
+							<span>Москва</span><br>
+							<a href="tel:88003332941">8 800 333-29-41</a>
+							<span>Россия</span>
+						</p>
+						<a href="mailto:info@treez.ru" class="footer__text footer__text--accent">info@treez.ru</a>
+						<p class="footer__text">
+							г. Москва,<br>
+							Большой Тишинский переулок, 12
+						</p>
+						<p class="footer__text">
+							<span>Понедельник - пятница</span><br>
+							10:00-18:00, без перерыва
+						</p>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__title">Каталог</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Деревья</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Горшечные растения, кусты и мох</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Ампельные растения</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Кашпо</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Дизайнерские композиции</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Цветы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Растения и мох для Фитостен</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+						<h3 class="footer__title">О КОМПАНИИ</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">О Treez</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Доставка и оплата</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Вопросы и ответы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--tablet">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Положение о защите персональных данных</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Политика безопасности</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: перечень</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: ведомость</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Инструкция по эксплуатации</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--short-list">
+						<h3 class="footer__title footer__title--plug"></h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Новости</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Статьи</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Идеи</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Кашпо</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--social">
+						<h3 class="footer__subtitle">Присоеденяйтесь к treez <br>в социальных сетях</h3>
+						<ul class="c-socmedia footer__socmedia">
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-pinterest"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-dzen"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socmedia__item">
+								<a href="#" class="c-socmedia__link">
+									<svg class="c-socmedia__icon">
+										<use xlink:href="img/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__block footer__block--copyright">
+						<p class="footer__copyright">
+							© Treez Collection.<br>
+							Искусственные цветы и деревья. 2005—2021
+						</p>
+					</div>
+					<div class="footer__block footer__block--list footer__block--no-tablet">
+						<ul class="footer__list footer__list--flex">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Положение о защите персональных данных</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Политика безопасности</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: перечень</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">СОУТ: ведомость</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Инструкция по эксплуатации</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block footer__block--design-by">
+						<div class="c-design-by">
+							<picture class="c-design-by__img">
+								<img src="img/icrea.svg" alt="icrea">
+							</picture>
+							<p class="c-design-by__text">Дизайн и разработка сайта <a href="icrea.ru" target="_blank">icrea.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+		<a href="#header" class="c-up-btn fixed">
+			<svg class="c-up-btn__icon">
+				<use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+			</svg>
+		</a>
+	</div>
+	<!-- end of wrapper -->
+	<!-- ideas tooltip -->
+	<a href="products.html" class="ideas-tooltip" id="ideas-tooltip" target="_blank">
+		<picture class="ideas-tooltip__img">
+			<img src="img/catalog-01.png" alt="Image">
+		</picture>
+		<div class="ideas-tooltip__body">
+			<span class="ideas-tooltip__title">Апельсиновое дерево с плодами</span>
+			<div class="ideas-tooltip__info">
+				<span class="ideas-tooltip__value ideas-tooltip__value--lg">От <b>15 385 Р.</b></span>
+				<span class="ideas-tooltip__value">Высота см. <b>80/100/120</b></span>
+				<span class="ideas-tooltip__value">Артикул <b>10.25402N</b></span>
+			</div>
+		</div>
+	</a>
+	<!-- end of ideas tooltip -->
+	<!-- modal -->
+	<div class="modal fixed" id="modal-auth">
+		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
+			<svg class="modal__close-icon">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal__scroll">
+			<div class="modal__wrap">
+				<button class="modal__close-btn modal__close-btn--desktop modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__wrapper modal__wrapper--flex">
+					<div class="modal__tabs">
+						<button class="modal__tab is--active" data-modal-tab="left">Авторизация</button>
+						<button class="modal__tab" data-modal-tab="right">Регистрация</button>
+					</div>
+					<div class="modal__left is--active">
+						<div class="modal__main">
+							<div class="modal__top">
+								<h3 class="modal__heading">Авторизация</h3>
+							</div>
+							<div class="modal__body">
+								<div class="modal__holder is--active" data-auth-form="login">
+									<div class="modal__notification">
+										<p class="modal__notification-text">
+											После авторизации, возможно, у вас не будет доступа к 3D моделям и изображениям.<br><br>
+											Для получения доступа необходимо обратиться к своему менеджеру.
+										</p>
+									</div>
+									<form action="#" class="modal__form">
+										<!-- add class 'is--active' for visible -->
+										<div class="form-error">
+											<span class="form-error__title">Неверный логин или пароль.</span>
+										</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="auth-email" class="input-field__input" placeholder="Введите свой e-mail">
+											</div>
+											<label for="auth-email" class="input-field__label">E-MAIL *</label>
+										</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="password" id="auth-password" class="input-field__input" placeholder="Введите пароль">
+												<button class="input-field__visibility-btn">
+													<span class="input-field__visibility-icon"></span>
+													<span class="input-field__visibility-title">показать</span>
+												</button>
+											</div>
+											<label for="auth-password" class="input-field__label">пароль *</label>
+										</div>
+										<div class="modal__inner">
+											<div class="square-checkbox square-checkbox--default modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="save-data">
+												<label for="save-data" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Запомнить</span>
+												</label>
+											</div>
+											<a href="#" class="modal__link modal-auth-trigger" data-auth-form="restore">Восстановить пароль</a>
+										</div>
+										<div class="c-socauth modal__socauth">
+											<div class="c-socauth__top">
+												<span class="c-socauth__title">Войти через соцсети:</span>
+												<span class="c-socauth__help">Необходим действующий аккаунт</span>
+											</div>
+											<ul class="c-socauth__list">
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-google-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-vk-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-facebook-color"></use>
+														</svg>
+													</a>
+												</li>
+												<li class="c-socauth__item">
+													<a href="#" class="c-socauth__link">
+														<svg class="c-socauth__icon">
+															<use xlink:href="img/sprite.svg#icon-apple-color"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Войти</button>
+										</div>
+									</form>
+								</div>
+								<div class="modal__holder" data-auth-form="restore">
+									<form action="#" class="modal__form">
+										<div class="modal__content content">
+											<p>
+												Для восстановления пароля введите Ваш e-mail, указанный при регистрации
+											</p>
+										</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="auth-email-restore" class="input-field__input" placeholder="Введите свой e-mail">
+											</div>
+											<label for="auth-email" class="input-field__label">E-MAIL *</label>
+										</div>
+										<div class="modal__inner">
+											<a href="#" class="modal__link modal-auth-trigger" data-auth-form="login">Авторизация</a>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Отправить</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal__right">
+						<div class="modal__main">
+							<div class="modal__top">
+								<h3 class="modal__heading">Новый пользователь</h3>
+							</div>
+							<div class="modal__body">
+								<div class="modal__holder is--active">
+									<div class="modal__notification">
+										<p class="modal__notification-text">
+											Получение доступа к 3D моделям и изображениям возможно только после проверки аккаунта.
+										</p>
+									</div>
+									<form action="#" class="modal__form">
+										<!-- add class 'is--active' for visible -->
+										<div class="form-error">
+											<span class="form-error__title">Неверный логин или пароль.</span>
+										</div>
+										<div class="input-field modal__input">
+											<div class="input-field__inner">
+												<input type="email" id="register-email" class="input-field__input" placeholder="Введите свой e-mail" required>
+											</div>
+											<label for="register-email" class="input-field__label">E-MAIL *</label>
+										</div>
+										<div class="modal__content content">
+											<p class="accent">
+												Внимание! Регистрация только для юридических лиц, ИП и специалистов. Обратите внимание, что компания не работает с частными лицами.
+											</p>
+											<p>
+												Внимание! После первичной регистрации просим максимально правильно заполнять все поля. Важно! Представителей юридических фирм регистрироваться как Юридическое лицо, для ИП так же есть специальная форма регистрации. Это необходимо, чтобы ваши заказы правильно обрабатывались.
+											</p>
+										</div>
+										<div class="modal__checkboxes">
+											<div class="square-checkbox square-checkbox--default square-checkbox--sm modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="subscribe-email">
+												<label for="subscribe-email" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Подписаться на рассылку</span>
+												</label>
+											</div>
+											<div class="square-checkbox square-checkbox--default square-checkbox--sm modal__checkbox">
+												<input type="checkbox" class="square-checkbox__input" id="conditions-data" required>
+												<label for="conditions-data" class="square-checkbox__group">
+													<span class="square-checkbox__icon"></span>
+													<span class="square-checkbox__title">Я подтверждаю, что я старше 18 лет и принимаю <a href="#">условия работы сайта</a></span>
+												</label>
+											</div>
+										</div>
+										<div class="modal__bottom">
+											<button class="modal__btn btn">Зарегистрироваться</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
+	<!-- end of modal -->
+	<!-- ideas popup -->
+	<div class="ideas-popup" id="ideas-popup">
+		<div class="ideas-popup__wrap">
+			<button class="ideas-popup__close-btn ideas-popup__close" aria-label="Закрыть">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="container">
+				<div class="ideas-popup__slider">
+					<div class="ideas-popup__slider-wrapper">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="ideas-popup__slide">
+										<picture class="ideas-popup__img">
+											<img src="img/ideas-01.jpg" alt="Image">
+											<div class="ideas-popup__img-inner">
+												<div class="ideas-popup__img-icon ideas-popup__img-icon--white ideas-popup__img-icon--mobile products-used-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</div>
+											</div>
+											<a href="products.html" class="ideas__img-bullet" style="top: 23%; left: 20%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
+											<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
+										</picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="ideas-popup__slide">
+										<picture class="ideas-popup__img">
+											<img src="img/ideas-02.jpg" alt="Image">
+											<div class="ideas-popup__img-inner">
+												<div class="ideas-popup__img-icon ideas-popup__img-icon--white ideas-popup__img-icon--mobile products-used-trigger">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</div>
+											</div>
+											<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-plus"></use>
+												</svg>
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-info"></use>
+												</svg>
+											</a>
+										</picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="ideas-popup__slide">
+										<picture class="ideas-popup__img">
+											<img src="img/ideas-03.jpg" alt="Image">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-controls">
+								<button class="swiper-button-prev" aria-label="Назад">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<div class="swiper-pagination"></div>
+								<button class="swiper-button-next" aria-label="Далее">
+									<svg class="swiper-button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of ideas popup -->
+	<!-- products used -->
+	<div class="products-used" id="products-used">
+		<div class="products-used__wrap">
+			<div class="products-used__wrapper">
+				<div class="products-used__top">
+					<h2 class="products-used__heading">Используемые <br>товары</h2>
+					<button class="products-used__close-btn products-used__close">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="products-used__items">
+					<a href="products.html" class="products-used-card products-used__item" target="_blank">
+						<picture class="products-used-card__img">
+							<img src="img/catalog-01.png" alt="Image">
+						</picture>
+						<div class="products-used-card__body">
+							<span class="products-used-card__title">Пальма Цикас Мультикрона искусственная многоствольная</span>
+							<div class="products-used-card__info">
+								<span class="products-used-card__value products-used-card__value--lg">От <b>19 521 Р.</b></span>
+								<span class="products-used-card__value">Высота см. <b>150/180/210/240</b></span>
+								<span class="products-used-card__value">Артикул <b>20.1125RD</b></span>
+							</div>
+						</div>
+					</a>
+					<a href="products.html" class="products-used-card products-used__item" target="_blank">
+						<picture class="products-used-card__img">
+							<img src="img/catalog-01.png" alt="Image">
+						</picture>
+						<div class="products-used-card__body">
+							<span class="products-used-card__title">Пальма Цикас Мультикрона искусственная многоствольная</span>
+							<div class="products-used-card__info">
+								<span class="products-used-card__value products-used-card__value--lg">От <b>19 521 Р.</b></span>
+								<span class="products-used-card__value">Высота см. <b>150/180/210/240</b></span>
+								<span class="products-used-card__value">Артикул <b>20.1125RD</b></span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of products used -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
