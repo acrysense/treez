@@ -52,36 +52,54 @@
 						</div>
 						<div class="header__inner">
 							<div class="header__inner">
-								<a href="#" class="header__icon-wrap" id="search-toggle">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
+								<a href="#" class="header__control" id="search-toggle">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Поиск</span>
 								</a>
-								<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-favorite"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Избранное</span>
 								</a>
-								<a href="#" class="header__icon-wrap header__icon-wrap--active">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Корзина</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-favorite"></use>
-									</svg>
+								<a href="#" class="header__control modal-btn" data-id="modal-auth">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Войти</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-cart"></use>
-									</svg>
+								<a href="#" class="header__control is--active">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Екатерина</span>
 								</a>
 							</div>
 							<button class="hamburger" id="hamburger-toggle">
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
+								<div class="hamburger__group">
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+								</div>
+								<span class="hamburger__title">Меню</span>
 							</button>
 						</div>
 					</div>
@@ -512,7 +530,7 @@
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
-		<footer class="footer" id="footer">
+		<footer class="footer @@footer" id="footer">
 			<div class="container">
 				<div class="footer__main">
 					<div class="footer__block footer__block--info">

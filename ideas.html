@@ -52,36 +52,54 @@
 						</div>
 						<div class="header__inner">
 							<div class="header__inner">
-								<a href="#" class="header__icon-wrap" id="search-toggle">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
+								<a href="#" class="header__control" id="search-toggle">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Поиск</span>
 								</a>
-								<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-favorite"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Избранное</span>
 								</a>
-								<a href="#" class="header__icon-wrap header__icon-wrap--active">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Корзина</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-favorite"></use>
-									</svg>
+								<a href="#" class="header__control modal-btn" data-id="modal-auth">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Войти</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-cart"></use>
-									</svg>
+								<a href="#" class="header__control is--active">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Екатерина</span>
 								</a>
 							</div>
 							<button class="hamburger" id="hamburger-toggle">
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
+								<div class="hamburger__group">
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+								</div>
+								<span class="hamburger__title">Меню</span>
 							</button>
 						</div>
 					</div>
@@ -212,16 +230,6 @@
 				</div>
 			</section>
 			<!-- end of page top -->
-			<!-- section description -->
-			<section class="section-description" id="section-description">
-				<div class="container">
-					<div class="section-description__content">
-						<p>Успех оформления любого интерьера – как классического, так современного – зависит от умения дизайнера создавать <a href="#">эксклюзивные варианты</a> за счёт индивидуального подхода к использованию различных <a href="#">декоративных элементов</a> в каждом отдельно взятом доме. </p>
-						<p>В то же время, основы интерьерного дизайна, как, впрочем, и любого другого искусства, строятся по определённым канонам, отступать от которых можно лишь в исключительных случаях.</p>
-					</div>
-				</div>
-			</section>
-			<!-- end of section description -->
 			<!-- ideas -->
 			<section class="ideas section-indent" id="ideas">
 				<div class="container">
@@ -284,7 +292,7 @@
 												</a>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -315,7 +323,7 @@
 												</a>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -333,7 +341,112 @@
 												</div>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные</a></h3>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="ideas__more btn">смотреть все идеи</a>
+				</div>
+			</section>
+			<!-- end of ideas -->
+			<!-- ideas -->
+			<section class="ideas section-indent" id="ideas-2">
+				<div class="container">
+					<div class="ideas__slider">
+						<div class="section-heading">
+							<div class="section-heading__group">
+								<h2 class="section-heading__title">Оригинальные идеи <br>оформления!</h2>
+							</div>
+							<div class="section-heading__group">
+								<div class="swiper-controls section-heading__controls">
+									<button class="swiper-button-prev" aria-label="Назад">
+										<svg class="swiper-button-icon">
+											<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+										</svg>
+									</button>
+									<div class="swiper-pagination"></div>
+									<button class="swiper-button-next" aria-label="Далее">
+										<svg class="swiper-button-icon">
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="ideas__slider-wrapper">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="ideas__item">
+											<div class="ideas__img ideas-popup-trigger">
+												<img src="img/ideas-01.jpg" alt="Image">
+												<div class="ideas__img-inner">
+													<span class="ideas__img-value">3 фото</span>
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-info"></use>
+														</svg>
+													</div>
+													<div class="ideas__img-icon">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-zoom"></use>
+														</svg>
+													</div>
+												</div>
+												<a href="products.html" class="ideas__img-bullet" style="top: 23%; left: 20%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+												<a href="products.html" class="ideas__img-bullet" style="top: 60%; left: 88%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="ideas__body">
+												<h3 class="ideas__title"><a href="#">Гостиные</a></h3>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="ideas__item">
+											<div class="ideas__img ideas-popup-trigger">
+												<img src="img/ideas-02.jpg" alt="Image">
+												<div class="ideas__img-inner">
+													<span class="ideas__img-value">2 фото</span>
+													<div class="ideas__img-icon ideas__img-icon--white ideas__img-icon--mobile products-used-trigger">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-info"></use>
+														</svg>
+													</div>
+													<div class="ideas__img-icon">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-zoom"></use>
+														</svg>
+													</div>
+												</div>
+												<a href="products.html" class="ideas__img-bullet" style="top: 55%; left: 50%;" target="_blank">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-info"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="ideas__body">
+												<h3 class="ideas__title"><a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -348,7 +461,7 @@
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
-		<footer class="footer" id="footer">
+		<footer class="footer @@footer" id="footer">
 			<div class="container">
 				<div class="footer__main">
 					<div class="footer__block footer__block--info">

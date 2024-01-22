@@ -52,36 +52,54 @@
 						</div>
 						<div class="header__inner">
 							<div class="header__inner">
-								<a href="#" class="header__icon-wrap" id="search-toggle">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
+								<a href="#" class="header__control" id="search-toggle">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Поиск</span>
 								</a>
-								<a href="#" class="header__icon-wrap modal-btn" data-id="modal-auth">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-favorite"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Избранное</span>
 								</a>
-								<a href="#" class="header__icon-wrap header__icon-wrap--active">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-user"></use>
-									</svg>
+								<a href="#" class="header__control">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-cart"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Корзина</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-favorite"></use>
-									</svg>
+								<a href="#" class="header__control modal-btn" data-id="modal-auth">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Войти</span>
 								</a>
-								<a href="#" class="header__icon-wrap">
-									<svg class="header__icon">
-										<use xlink:href="img/sprite.svg#icon-cart"></use>
-									</svg>
+								<a href="#" class="header__control is--active">
+									<div class="header__control-icon">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+									</div>
+									<span class="header__control-title">Екатерина</span>
 								</a>
 							</div>
 							<button class="hamburger" id="hamburger-toggle">
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
-								<span class="hamburger__inner"></span>
+								<div class="hamburger__group">
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+								</div>
+								<span class="hamburger__title">Меню</span>
 							</button>
 						</div>
 					</div>
@@ -214,9 +232,11 @@
 											</div>
 										</div>
 									</div>
-									<picture class="main__bg">
-										<img src="img/main-01.jpg" alt="Image">
-									</picture>
+									<div class="main__bg">
+										<video loop muted playsinline autoplay poster="img/main-01.jpg">
+											<source src="video/main-bg.mp4" type="video/mp4">
+										</video>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
@@ -265,6 +285,72 @@
 				</div>
 			</section>
 			<!-- end of main -->
+			<!-- main about -->
+			<section class="main-about" id="main-about">
+				<div class="container">
+					<div class="main-about__wrap">
+						<div class="main-about__top">
+							<h4 class="main-about__subtitle">О TREEZ</h4>
+							<h2 class="main-about__heading">TREEZ Collection – производство, импорт и дистрибуция искусственных растений и деревьев максимальной реалистичности.</h2>
+						</div>
+						<div class="main-about__main">
+							<div class="main-about__block">
+								<picture class="main-about__img">
+									<img src="img/main-about-img.jpg" alt="Image">
+								</picture>
+								<div class="main-about__brands">
+									<p>Наши бренды:</p>
+									<ul>
+										<li>TREE Factory</li>
+										<li>TREEZ</li>
+										<li>TREEZ Ergo</li>
+										<li>TREEZ Effectory</li>
+									</ul>
+								</div>
+								<a href="#" class="main-about__more main-about__more--desktop">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-more"></use>
+									</svg>
+									<span>Узнать больше о Treez</span>
+								</a>
+							</div>
+							<div class="main-about__block">
+								<div class="main-about__content">
+									<ul>
+										<li>Большой выставочный зал - более 1000 видов лучших деревьев, растений, кустов, цветов и кашпо.</li>
+										<li>Крупнейший в Европе складской запас, находящийся в Москве.</li>
+										<li>Самый полный и качественный интернет-каталог.</li>
+										<li>Постоянная работа по созданию новых образцов и коллекций.</li>
+										<li>Приоритет качеству и сервису.</li>
+									</ul>
+									<p>
+										Важными отличительными особенностями производства этих цветов, являются использование натурального шелка для лепестков цветов, детальная цветовая проработка колористических нюансов и внимание к мини деталям.
+										Именно присутствие шелка дает цветку легкость и воздушность живого растения, а проработанная колористика и цветовое градирование, возможное только на шелковых поверхностях, окончательно стирает границу между творением мастера и природы.
+									</p>
+								</div>
+								<div class="main-about__inner">
+									<a href="#" class="main-about__content-more">
+										<span>Развернуть</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-caret"></use>
+										</svg>
+									</a>
+									<a href="#" class="main-about__more main-about__more--mobile">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-more"></use>
+										</svg>
+										<span>Узнать больше о Treez</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<picture class="main-about__bg">
+						<img src="img/main-about-img.jpg" alt="Image">
+					</picture>
+				</div>
+			</section>
+			<!-- end of main about -->
 			<!-- categories -->
 			<section class="categories section-indent" id="categories">
 				<div class="container">
@@ -541,6 +627,24 @@
 							<h2 class="catalog-book__heading">Каталог искусственных растений и цветов Treez Collection</h2>
 							<picture class="catalog-book__img">
 								<img src="img/catalog-book-01.jpg" alt="Image">
+								<div class="catalog-book__controls">
+									<a href="#" class="c-btn-round catalog-book__control">
+										<div class="c-btn-round__icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-book"></use>
+											</svg>
+										</div>
+										<span class="c-btn-round__title">Пролистать</span>
+									</a>
+									<a href="#" class="c-btn-round catalog-book__control">
+										<div class="c-btn-round__icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-download"></use>
+											</svg>
+										</div>
+										<span class="c-btn-round__title">Скачать</span>
+									</a>
+								</div>
 							</picture>
 							<div class="catalog-book__bottom">
 								<p class="catalog-book__description">
@@ -555,6 +659,24 @@
 							<h2 class="catalog-book__heading">Каталог дизайнерских кашпо Treez</h2>
 							<picture class="catalog-book__img">
 								<img src="img/catalog-book-02.jpg" alt="Image">
+								<div class="catalog-book__controls">
+									<a href="#" class="c-btn-round catalog-book__control">
+										<div class="c-btn-round__icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-book"></use>
+											</svg>
+										</div>
+										<span class="c-btn-round__title">Пролистать</span>
+									</a>
+									<a href="#" class="c-btn-round catalog-book__control">
+										<div class="c-btn-round__icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-download"></use>
+											</svg>
+										</div>
+										<span class="c-btn-round__title">Скачать</span>
+									</a>
+								</div>
 							</picture>
 							<div class="catalog-book__bottom">
 								<p class="catalog-book__description">Мы создали для вас новый каталог дизайнерских кашпо TREEZ, а так же много новых композиций из наших искусственных растений для вашего вдохновения.</p>
@@ -758,7 +880,7 @@
 												</a>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -789,7 +911,7 @@
 												</a>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные Гостиные Гостиные Гостиные Гостиные Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -807,7 +929,7 @@
 												</div>
 											</div>
 											<div class="ideas__body">
-												<h3 class="ideas__title">Тип помещения <a href="#">Гостиные</a></h3>
+												<h3 class="ideas__title"><a href="#">Гостиные</a></h3>
 											</div>
 										</article>
 									</div>
@@ -914,11 +1036,18 @@
 				<div class="container">
 					<div class="inst-collection__slider">
 						<div class="inst-collection__top">
-							<div class="inst-collection__group">
-								<h2 class="inst-collection__heading">Instagram <a href="#">treez_collection</a></h2>
-								<div class="inst-collection__inner">
-									<span class="inst-collection__elem">Публикаций <b>539</b></span>
-									<span class="inst-collection__elem">Подписчиков <b>30.871</b></span>
+							<div class="inst-collection__group inst-collection__group--flex">
+								<div class="inst-collection__group-inner">
+									<svg class="inst-collection__icon">
+										<use xlink:href="img/sprite.svg#icon-instagram"></use>
+									</svg>
+								</div>
+								<div class="inst-collection__group-inner">
+									<h2 class="inst-collection__heading">Instagram <a href="#">treez_collection</a></h2>
+									<div class="inst-collection__inner">
+										<span class="inst-collection__elem">Публикаций <b>539</b></span>
+										<span class="inst-collection__elem">Подписчиков <b>30.871</b></span>
+									</div>
 								</div>
 							</div>
 							<div class="inst-collection__group">
@@ -1000,7 +1129,7 @@
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
-		<footer class="footer" id="footer">
+		<footer class="footer footer--bg" id="footer">
 			<div class="container">
 				<div class="footer__main">
 					<div class="footer__block footer__block--info">
