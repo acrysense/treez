@@ -1012,7 +1012,7 @@
 		ymaps.ready(function() {
 			var contactsMap = new ymaps.Map('contacts-map', {
 					center: [55.769159, 37.576006],
-					zoom: 13,
+					zoom: 15,
 					controls: []
 				}),
 
@@ -1025,6 +1025,24 @@
 				});
 
 			contactsMap.geoObjects.add(myPlacemark);
+
+			contactsMap.behaviors.disable(['scrollZoom']);
+
+			var body = document.getElementsByTagName('body')[0];
+			body.onkeydown = callbackDown;
+			body.onkeyup = callbackUp;
+
+			function callbackDown(e) {
+				if (e.keyCode === 17) {
+					contactsMap.behaviors.enable(['scrollZoom']);
+				}
+			}
+
+			function callbackUp(e) {
+				if (e.keyCode === 17) {
+					contactsMap.behaviors.disable(['scrollZoom']);
+				}
+			}
 		});
 	</script>
 </body>
