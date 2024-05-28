@@ -474,6 +474,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="contacts__map" id="contacts-map"></div>
 				</div>
 			</section>
 			<!-- end of contacts -->
@@ -1006,6 +1007,26 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1edbabbb-56e4-47cd-b16f-1152255f4fcc" type="text/javascript"></script>
+	<script>
+		ymaps.ready(function() {
+			var contactsMap = new ymaps.Map('contacts-map', {
+					center: [55.769159, 37.576006],
+					zoom: 13,
+					controls: []
+				}),
+
+				// Создание метки с пользовательским макетом балуна.
+				myPlacemark = window.myPlacemark = new ymaps.Placemark(contactsMap.getCenter(), {}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/marker-map.svg',
+					iconImageSize: [48, 60],
+					iconImageOffset: [-5, -38]
+				});
+
+			contactsMap.geoObjects.add(myPlacemark);
+		});
+	</script>
 </body>
 
 </html>
