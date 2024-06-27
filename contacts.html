@@ -1043,6 +1043,18 @@
 					contactsMap.behaviors.disable(['scrollZoom']);
 				}
 			}
+
+			var zoomControl = new ymaps.control.ZoomControl({
+				options: {
+					size: 'small', // Задаем компактный размер
+					position: {
+						top: 10,
+						right: 10
+					}
+				}
+			});
+
+			contactsMap.controls.add(zoomControl);
 		});
 	</script>
 </body>
