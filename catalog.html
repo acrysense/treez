@@ -225,21 +225,33 @@
 			<!-- page top -->
 			<section class="page-top" id="page-top" style="background-image: url(img/catalog-bg.jpg);">
 				<div class="container">
-					<div class="page-top__body">
-						<h1 class="page-top__heading">Каталог</h1>
-						<p class="page-top__description">
-							Хороший способ украсить интерьер и недорого оформить помещение. Деревья и цветущие кустарники выглядят натурально и не требуют ухода.
-						</p>
-					</div>
-					<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-						<ol class="breadcrumb__list">
-							<li class="breadcrumb__item">
-								<a href="index.html" class="breadcrumb__link">Главная</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="catalog.html" class="breadcrumb__link">Каталог</a>
-							</li>
-						</ol>
+					<div class="page-top__wrap">
+						<div class="page-top__body">
+							<h1 class="page-top__heading">Каталог</h1>
+							<p class="page-top__description">
+								Хороший способ украсить интерьер и недорого оформить помещение. Деревья и цветущие кустарники выглядят натурально и не требуют ухода.
+							</p>
+						</div>
+						<div class="page-top__inner">
+							<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="index.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="catalog.html" class="breadcrumb__link">Каталог</a>
+									</li>
+								</ol>
+							</div>
+							<div class="page-top__controls">
+								<a href="#" class="other-links page-top__control">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-download"></use>
+									</svg>
+									<span>Прайс-листы и каталоги</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -250,7 +262,7 @@
 					<form action="#" class="page-search__form">
 						<div class="page-search__block">
 							<input type="text" class="page-search__input" placeholder="Введите название или артикул">
-							<span class="page-search__help">например, <a href="#">Кипарис</a></span>
+							<span class="page-search__help">например, <a href="#" data-value="Кипарис">Кипарис</a></span>
 						</div>
 						<button class="page-search__btn">
 							<svg>

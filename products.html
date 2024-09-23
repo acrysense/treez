@@ -50,6 +50,22 @@
 								<span class="c-catalog__title">Каталог</span>
 							</a>
 						</div>
+						<div class="personal-sale header__sale">
+							<div class="personal-sale__wrapper">
+								<div class="personal-sale__inner">
+									<label for="switch-personal-sale-head" class="switch personal-sale__switch">
+										<input type="checkbox" id="switch-personal-sale-head" class="switch__input">
+										<div class="switch__group">
+											<span class="switch__title switch__title--accent">30%</span>
+											<span class="switch__icon"></span>
+											<span class="switch__title switch__title--white">Без скидки</span>
+										</div>
+									</label>
+								</div>
+								<a href="#" class="personal-sale__link">Скрыть настройки</a>
+								<a href="#" class="personal-sale__link is--hidden">Показать настройки</a>
+							</div>
+						</div>
 						<div class="header__inner">
 							<div class="header__inner">
 								<div class="header-control header__control">
@@ -225,43 +241,102 @@
 			<!-- page top -->
 			<section class="page-top page-top--no-pb" id="page-top" style="background-image: url(img/catalog-bg.jpg);">
 				<div class="container">
-					<div class="page-top__body">
-						<h1 class="page-top__heading">Растения, кусты, мох и трава <small>219</small></h1>
-					</div>
-					<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-						<ol class="breadcrumb__list">
-							<li class="breadcrumb__item">
-								<a href="index.html" class="breadcrumb__link">Главная</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="catalog.html" class="breadcrumb__link">Каталог</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="products.html" class="breadcrumb__link">Растения, кусты, мох и трава</a>
-							</li>
-						</ol>
-					</div>
-					<div class="catalog-sections page-top__catalog">
-						<div class="catalog-sections__wrapper">
-							<a class="catalog-sections__item" href="#" data-sections-id="1">Деревья</a>
-							<a class="catalog-sections__item is--active" href="#" data-sections-id="2">Растения, кусты, мох и трава</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="3">Ампельные растения</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="4">Кашпо</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="5">Дизайнерские композиции</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="6">Цветы</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="7">Товары с 3D-моделями</a>
-							<a class="catalog-sections__item" href="#" data-sections-id="8">Растения и мох для Фитостен</a>
+					<div class="page-top__wrap">
+						<div class="page-top__body">
+							<h1 class="page-top__heading">Искусственные деревья <small>228</small></h1>
+							<p class="page-top__description">
+								Хороший способ украсить интерьер и недорого оформить помещение.
+								<br>
+								Деревья и цветущие кустарники выглядят натурально и не требуют ухода.
+							</p>
 						</div>
-						<select class="catalog-sections__select">
-							<option value="1">Деревья</option>
-							<option value="2" selected>Растения, кусты, мох и трава</option>
-							<option value="3">Ампельные растения</option>
-							<option value="4">Кашпо</option>
-							<option value="5">Дизайнерские композиции</option>
-							<option value="6">Цветы</option>
-							<option value="7">Товары с 3D-моделями</option>
-							<option value="8">Растения и мох для Фитостен</option>
-						</select>
+						<div class="page-top__inner">
+							<div class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="index.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="catalog.html" class="breadcrumb__link">Каталог</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="products.html" class="breadcrumb__link">Искусственные деревья</a>
+									</li>
+								</ol>
+							</div>
+							<div class="personal-sale page-top__sale">
+								<div class="personal-sale__wrapper">
+									<div class="personal-sale__inner">
+										<label for="switch-personal-sale" class="switch personal-sale__switch">
+											<input type="checkbox" id="switch-personal-sale" class="switch__input">
+											<div class="switch__group">
+												<span class="switch__title switch__title--accent">30%</span>
+												<span class="switch__icon"></span>
+												<span class="switch__title switch__title--white">Без скидки</span>
+											</div>
+										</label>
+									</div>
+									<a href="#" class="personal-sale__link">Скрыть настройки</a>
+									<a href="#" class="personal-sale__link is--hidden">Показать настройки</a>
+								</div>
+							</div>
+							<div class="page-top__controls">
+								<a href="#" class="other-links page-top__control">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-folder"></use>
+									</svg>
+									<span>Архивные товары</span>
+								</a>
+								<a href="#" class="other-links page-top__control">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-download"></use>
+									</svg>
+									<span>Прайс-листы и каталоги</span>
+								</a>
+							</div>
+						</div>
+						<div class="catalog-sections page-top__catalog">
+							<div class="catalog-sections__wrapper">
+								<a class="catalog-sections__item is--active" href="#" data-sections-id="1">
+									<span>Деревья</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="2">
+									<span>Растения, кусты, мох и трава</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="3">
+									<span>Ампельные растения</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="4">
+									<span>Кашпо</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="5">
+									<span>Дизайнерские композиции</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="6">
+									<span>Цветы</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="7">
+									<span>Товары с 3D-моделями</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="8">
+									<span>Готовые решения от Treez</span>
+								</a>
+								<a class="catalog-sections__item" href="#" data-sections-id="9">
+									<span>Растения и мох для Фитостен</span>
+								</a>
+							</div>
+							<select class="catalog-sections__select">
+								<option value="1" selected>Деревья</option>
+								<option value="2">Растения, кусты, мох и трава</option>
+								<option value="3">Ампельные растения</option>
+								<option value="4">Кашпо</option>
+								<option value="5">Дизайнерские композиции</option>
+								<option value="6">Цветы</option>
+								<option value="7">Товары с 3D-моделями</option>
+								<option value="8">Готовые решения от Treez</option>
+								<option value="9">Растения и мох для Фитостен</option>
+							</select>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -273,7 +348,7 @@
 						<form action="#" class="page-search__form">
 							<div class="page-search__block">
 								<input type="text" class="page-search__input" placeholder="Введите название или артикул">
-								<span class="page-search__help">например, <a href="#">Кипарис</a></span>
+								<span class="page-search__help">например, <a href="#" data-value="Кипарис">Кипарис</a></span>
 							</div>
 							<button class="page-search__btn">
 								<svg>
@@ -426,6 +501,9 @@
 											<div class="catalog-filter__block is--open">
 												<button class="catalog-filter__trigger">
 													<span>Группа</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
 												</button>
 												<div class="catalog-filter__dropdown" style="display: block;">
 													<div class="catalog-filter__checkboxes">
@@ -433,12 +511,16 @@
 															<div class="catalog-filter__checkbox-inner">
 																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
 																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
-																	<label for="filter-effectory-all" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
+																	<div class="square-checkbox__group">
+																		<label for="filter-effectory-all" class="square-checkbox__icon"></label>
 																		<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
-																	</label>
+																	</div>
 																</div>
-																<button class="catalog-filter__checkbox-trigger"></button>
+																<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-caret"></use>
+																	</svg>
+																</button>
 															</div>
 															<div class="catalog-filter__checkbox-dropdown">
 																<div class="square-checkbox catalog-filter__checkbox">
@@ -480,7 +562,11 @@
 																		<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
 																	</label>
 																</div>
-																<button class="catalog-filter__checkbox-trigger"></button>
+																<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																	<svg>
+																		<use xlink:href="img/sprite.svg#icon-caret"></use>
+																	</svg>
+																</button>
 															</div>
 															<div class="catalog-filter__checkbox-dropdown">
 																<div class="square-checkbox catalog-filter__checkbox">
@@ -534,6 +620,9 @@
 												<button class="catalog-filter__trigger">
 													<span>Материал</span>
 													<span class="catalog-filter__clear is--active">Сбросить</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
 												</button>
 												<div class="catalog-filter__dropdown" style="display: block;">
 													<div class="catalog-filter__checkboxes">
@@ -564,6 +653,9 @@
 											<div class="catalog-filter__block is--open">
 												<button class="catalog-filter__trigger">
 													<span>Цена <span>Руб.</span></span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
 												</button>
 												<div class="catalog-filter__dropdown" style="display: block;">
 													<div class="catalog-filter__range">
@@ -584,6 +676,9 @@
 											<div class="catalog-filter__block">
 												<button class="catalog-filter__trigger">
 													<span>Высота <span>См</span></span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
 												</button>
 												<div class="catalog-filter__dropdown">
 													<div class="catalog-filter__range">
@@ -604,6 +699,9 @@
 											<div class="catalog-filter__block">
 												<button class="catalog-filter__trigger">
 													<span>Цвет</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
 												</button>
 												<div class="catalog-filter__dropdown">
 													<div class="catalog-filter__colors">
@@ -722,7 +820,7 @@
 											<svg>
 												<use xlink:href="img/sprite.svg#icon-restore"></use>
 											</svg>
-											<span>Сбросить</span>
+											<span>Сбросить все</span>
 										</button>
 									</div>
 								</form>
