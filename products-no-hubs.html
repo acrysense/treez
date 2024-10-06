@@ -396,327 +396,368 @@
 					<div class="catalog__wrap catalog__wrap--border">
 						<div class="catalog__left">
 							<div class="catalog-filter">
-								<form action="#" class="catalog-filter__form">
-									<div class="catalog-filter__holder">
-										<button class="catalog-filter__close">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-close"></use>
-											</svg>
-											<span>Скрыть</span>
-										</button>
-										<div class="catalog-filter__main">
-											<div class="catalog-filter__block">
-												<label for="switch-3d-models" class="switch catalog-filter__switch">
-													<input type="checkbox" id="switch-3d-models" class="switch__input">
-													<div class="switch__group">
-														<span class="switch__icon"></span>
-														<span class="switch__title">Есть 3D модели</span>
-													</div>
-												</label>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Группа</span>
+								<div class="catalog-filter__wrap">
+									<div class="page-search catalog-filter__search">
+										<div class="page-search__wrapper">
+											<form action="#" class="page-search__form">
+												<div class="page-search__block">
+													<input type="text" class="page-search__input" placeholder="Название или артикул">
+													<span class="page-search__help">например, <a href="#" data-value="Кипарис">Кипарис</a></span>
+												</div>
+												<button class="page-search__btn">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-search"></use>
+													</svg>
 												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__checkboxes">
-														<div class="catalog-filter__checkbox-group">
-															<div class="catalog-filter__checkbox-inner">
-																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
-																	<label for="filter-effectory-all" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
-																	</label>
-																</div>
-																<button class="catalog-filter__checkbox-trigger"></button>
-															</div>
-															<div class="catalog-filter__checkbox-dropdown">
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-01">
-																	<label for="filter-effectory-01" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Beton</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-02">
-																	<label for="filter-effectory-02" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Crystal</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-03">
-																	<label for="filter-effectory-03" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Gloss</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-04">
-																	<label for="filter-effectory-04" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Metal</span>
-																	</label>
-																</div>
-															</div>
+											</form>
+										</div>
+									</div>
+									<form action="#" class="catalog-filter__form">
+										<div class="catalog-filter__holder">
+											<div class="catalog-filter__main">
+												<div class="catalog-filter__block">
+													<label for="switch-3d-models" class="switch catalog-filter__switch">
+														<input type="checkbox" id="switch-3d-models" class="switch__input">
+														<div class="switch__group">
+															<span class="switch__icon"></span>
+															<span class="switch__title">Есть 3D модели</span>
 														</div>
-														<div class="catalog-filter__checkbox-group">
-															<div class="catalog-filter__checkbox-inner">
-																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-group-all">
-																	<label for="filter-group-all" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
-																	</label>
+													</label>
+													<label for="switch-mob-availability" class="switch catalog-filter__switch catalog-filter__switch--mobile">
+														<input type="checkbox" id="switch-mob-availability" class="switch__input">
+														<div class="switch__group">
+															<span class="switch__icon"></span>
+															<span class="switch__title">Только в наличии</span>
+														</div>
+													</label>
+												</div>
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Группа</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__checkboxes">
+															<div class="catalog-filter__checkbox-group">
+																<div class="catalog-filter__checkbox-inner">
+																	<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
+																		<div class="square-checkbox__group">
+																			<label for="filter-effectory-all" class="square-checkbox__icon"></label>
+																			<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
+																		</div>
+																	</div>
+																	<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-caret"></use>
+																		</svg>
+																	</button>
 																</div>
-																<button class="catalog-filter__checkbox-trigger"></button>
+																<div class="catalog-filter__checkbox-dropdown">
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-01">
+																		<label for="filter-effectory-01" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Beton</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-02">
+																		<label for="filter-effectory-02" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Crystal</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-03">
+																		<label for="filter-effectory-03" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Gloss</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-04">
+																		<label for="filter-effectory-04" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Metal</span>
+																		</label>
+																	</div>
+																</div>
 															</div>
-															<div class="catalog-filter__checkbox-dropdown">
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-01">
-																	<label for="filter-ergo-01" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Comb</span>
-																	</label>
+															<div class="catalog-filter__checkbox-group">
+																<div class="catalog-filter__checkbox-inner">
+																	<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-group-all">
+																		<label for="filter-group-all" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
+																		</label>
+																	</div>
+																	<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-caret"></use>
+																		</svg>
+																	</button>
 																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-02">
-																	<label for="filter-ergo-02" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Cork</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-03">
-																	<label for="filter-ergo-03" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Graphics</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-04">
-																	<label for="filter-ergo-04" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Diamond</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-05">
-																	<label for="filter-ergo-05" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Jet</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-06">
-																	<label for="filter-ergo-06" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Just</span>
-																	</label>
+																<div class="catalog-filter__checkbox-dropdown">
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-01">
+																		<label for="filter-ergo-01" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Comb</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-02">
+																		<label for="filter-ergo-02" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Cork</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-03">
+																		<label for="filter-ergo-03" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Graphics</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-04">
+																		<label for="filter-ergo-04" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Diamond</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-05">
+																		<label for="filter-ergo-05" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Jet</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-06">
+																		<label for="filter-ergo-06" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Just</span>
+																		</label>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Материал</span>
-													<span class="catalog-filter__clear is--active">Сбросить</span>
-												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__checkboxes">
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-01">
-															<label for="filter-materias-01" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Полистоун</span>
-															</label>
-														</div>
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-02" checked>
-															<label for="filter-materias-02" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Композитный пластик</span>
-															</label>
-														</div>
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-03" disabled>
-															<label for="filter-materias-03" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Кортеновская сталь</span>
-															</label>
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Материал</span>
+														<span class="catalog-filter__clear is--active">Сбросить</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__checkboxes">
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-01">
+																<label for="filter-materias-01" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Полистоун</span>
+																</label>
+															</div>
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-02" checked>
+																<label for="filter-materias-02" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Композитный пластик</span>
+																</label>
+															</div>
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-03" disabled>
+																<label for="filter-materias-03" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Кортеновская сталь</span>
+																</label>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Цена <span>Руб.</span></span>
-												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__range">
-														<div class="catalog-filter__range-inner">
-															<div class="range-field">
-																<span class="range-field__help">От</span>
-																<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Цена <span>Руб.</span></span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__range">
+															<div class="catalog-filter__range-inner">
+																<div class="range-field">
+																	<span class="range-field__help">От</span>
+																	<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+																</div>
+																<div class="range-field">
+																	<span class="range-field__help">До</span>
+																	<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
+																</div>
 															</div>
-															<div class="range-field">
-																<span class="range-field__help">До</span>
-																<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
-															</div>
+															<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
 														</div>
-														<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block">
-												<button class="catalog-filter__trigger">
-													<span>Высота <span>См</span></span>
-												</button>
-												<div class="catalog-filter__dropdown">
-													<div class="catalog-filter__range">
-														<div class="catalog-filter__range-inner">
-															<div class="range-field">
-																<span class="range-field__help">От</span>
-																<input type="number" id="range-height-min" class="range-field__input range-field__input--min" placeholder="0">
+												<div class="catalog-filter__block">
+													<button class="catalog-filter__trigger">
+														<span>Высота <span>См</span></span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown">
+														<div class="catalog-filter__range">
+															<div class="catalog-filter__range-inner">
+																<div class="range-field">
+																	<span class="range-field__help">От</span>
+																	<input type="number" id="range-height-min" class="range-field__input range-field__input--min" placeholder="0">
+																</div>
+																<div class="range-field">
+																	<span class="range-field__help">До</span>
+																	<input type="number" id="range-height-max" class="range-field__input range-field__input--max" placeholder="160">
+																</div>
 															</div>
-															<div class="range-field">
-																<span class="range-field__help">До</span>
-																<input type="number" id="range-height-max" class="range-field__input range-field__input--max" placeholder="160">
-															</div>
+															<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
 														</div>
-														<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block">
-												<button class="catalog-filter__trigger">
-													<span>Цвет</span>
-												</button>
-												<div class="catalog-filter__dropdown">
-													<div class="catalog-filter__colors">
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-01">
-															<label for="filter-color-01" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon color-checkbox__icon--dark color-checkbox__icon--white" style="--color: #FFFFFF;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Белый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-02">
-															<label for="filter-color-02" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #0a0a0a;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Чёрный</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-03">
-															<label for="filter-color-03" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #6c6960;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Серый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-04">
-															<label for="filter-color-04" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #eae6ca;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Бежевый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-05">
-															<label for="filter-color-05" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #ffcf48;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Золотой</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-06">
-															<label for="filter-color-06" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #7d512d;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Коричневый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-07">
-															<label for="filter-color-07" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #d4764e;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Медный</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-08">
-															<label for="filter-color-08" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: black;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Окись</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-09">
-															<label for="filter-color-09" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #FFFFFF;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Белый</div>
-															</label>
+												<div class="catalog-filter__block">
+													<button class="catalog-filter__trigger">
+														<span>Цвет</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown">
+														<div class="catalog-filter__colors">
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-01">
+																<label for="filter-color-01" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon color-checkbox__icon--dark color-checkbox__icon--white" style="--color: #FFFFFF;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Белый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-02">
+																<label for="filter-color-02" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #0a0a0a;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Чёрный</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-03">
+																<label for="filter-color-03" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #6c6960;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Серый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-04">
+																<label for="filter-color-04" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #eae6ca;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Бежевый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-05">
+																<label for="filter-color-05" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #ffcf48;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Золотой</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-06">
+																<label for="filter-color-06" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #7d512d;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Коричневый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-07">
+																<label for="filter-color-07" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #d4764e;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Медный</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-08">
+																<label for="filter-color-08" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: black;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Окись</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-09">
+																<label for="filter-color-09" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #FFFFFF;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Белый</div>
+																</label>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="catalog-filter__controls">
-										<button class="catalog-filter__btn btn btn--md">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-check"></use>
-											</svg>
-											<span>Применить</span>
-										</button>
-										<button class="catalog-filter__btn btn btn--md btn--normal btn--white">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-restore"></use>
-											</svg>
-											<span>Сбросить</span>
-										</button>
-									</div>
-								</form>
+										<div class="catalog-filter__controls">
+											<button class="catalog-filter__btn btn btn--md">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-check"></use>
+												</svg>
+												<span>Применить</span>
+											</button>
+											<button class="catalog-filter__btn btn btn--md btn--normal btn--white">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-restore"></use>
+												</svg>
+												<span>Сбросить все</span>
+											</button>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 						<div class="catalog__right">
@@ -778,14 +819,14 @@
 											<span class="c-sort__title">Вид</span>
 											<div class="c-sort__controls c-sort-view">
 												<div class="c-sort-view__controls">
-													<button class="c-sort-view__control" data-id="0">
-														<svg>
-															<use xlink:href="img/sprite.svg#icon-view-01"></use>
-														</svg>
-													</button>
-													<button class="c-sort-view__control is--active" data-id="1">
+													<button class="c-sort-view__control is--active" data-id="0">
 														<svg>
 															<use xlink:href="img/sprite.svg#icon-view-02"></use>
+														</svg>
+													</button>
+													<button class="c-sort-view__control" data-id="1">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-view-01"></use>
 														</svg>
 													</button>
 												</div>
@@ -794,10 +835,14 @@
 									</div>
 									<div class="catalog-sort__item catalog-sort__item--filter c-filter-trigger">
 										<button class="c-filter-trigger__btn">
-											<svg>
+											<svg class="default">
 												<use xlink:href="img/sprite.svg#icon-filter"></use>
 											</svg>
-											<span>Параметры</span>
+											<span class="default">Параметры</span>
+											<svg class="active">
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+											<span class="active">Скрыть</span>
 										</button>
 									</div>
 								</div>
@@ -806,14 +851,14 @@
 										<span class="c-sort__title">Вид</span>
 										<div class="c-sort__controls c-sort-view">
 											<div class="c-sort-view__controls">
-												<button class="c-sort-view__control" data-id="0">
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-view-01"></use>
-													</svg>
-												</button>
-												<button class="c-sort-view__control is--active" data-id="1">
+												<button class="c-sort-view__control is--active" data-id="0">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-view-02"></use>
+													</svg>
+												</button>
+												<button class="c-sort-view__control" data-id="1">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-view-01"></use>
 													</svg>
 												</button>
 											</div>
@@ -822,44 +867,47 @@
 								</div>
 							</div>
 							<div class="catalog__wrapper">
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__statuses">
-											<div class="product-card__status-group">
-												<span class="product-card__status">NEW</span>
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__statuses">
+											<div class="catalog-card__status-group">
+												<span class="catalog-card__status">NEW</span>
 											</div>
-											<div class="product-card__status-group c-dropdown c-dropdown--left">
-												<span class="product-card__status product-card__status--red">Акция</span>
+											<div class="catalog-card__status-group c-dropdown c-dropdown--left">
+												<span class="catalog-card__status catalog-card__status--red">Акция</span>
 												<div class="c-dropdown__container">Акция! — Насладись самым большим размером по цене среднего!</div>
 											</div>
+											<div class="catalog-card__status-group">
+												<span class="catalog-card__status catalog-card__status--green">video</span>
+											</div>
 										</div>
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -867,9 +915,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -877,29 +925,71 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-01.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Апельсиновое дерево с плодами</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.091829N, 10.091830N, 10.091831N, 10.091831N, 10.091830N, 10.091829N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -908,44 +998,44 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__statuses">
-											<div class="product-card__status-group">
-												<span class="product-card__status">NEW</span>
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__statuses">
+											<div class="catalog-card__status-group">
+												<span class="catalog-card__status">NEW</span>
 											</div>
-											<div class="product-card__status-group c-dropdown c-dropdown--left">
-												<span class="product-card__status product-card__status--red">Акция</span>
+											<div class="catalog-card__status-group c-dropdown c-dropdown--left">
+												<span class="catalog-card__status catalog-card__status--red">Акция</span>
 												<div class=" c-dropdown__container">Акция! — Насладись самым большим размером по цене среднего!</div>
 											</div>
 										</div>
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -953,9 +1043,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -963,29 +1053,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-01.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Апельсиновое дерево с плодами</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -994,35 +1106,35 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger popup-btn" data-id="popup-3d-models">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger popup-btn" data-id="popup-3d-models">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-box"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать 3D модель<br>Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -1030,9 +1142,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1040,29 +1152,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-02.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Алоказия</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Алоказия</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -1071,27 +1205,27 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -1099,9 +1233,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1109,29 +1243,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-03.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Алоказия Калидора</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Камелия Японика кремовая</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -1140,27 +1296,27 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -1168,9 +1324,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1178,29 +1334,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-04.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Алоказия Калидора куст</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-04.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Бонсай Сосна Элит в керамическом кашпо из высокотехнологичного пластика, полистирола и керамики зеленого цвета</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -1209,27 +1387,27 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -1237,9 +1415,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1247,29 +1425,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-05.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Алоказия Калидора куст большой</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-05.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Алоказия Калидора куст большой</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -1278,32 +1478,32 @@
 										</div>
 									</div>
 								</article>
-								<article class="product-card catalog__item">
-									<div class="product-card__img-wrap">
-										<div class="product-card__statuses">
-											<div class="product-card__status-group">
-												<span class="product-card__status">NEW</span>
+								<article class="catalog-card catalog__item">
+									<div class="catalog-card__img-wrap">
+										<div class="catalog-card__statuses">
+											<div class="catalog-card__status-group">
+												<span class="catalog-card__status">NEW</span>
 											</div>
 										</div>
-										<div class="product-card__controls">
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger">
+										<div class="catalog-card__controls">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-favorite"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Необходимо авторизоваться для использования функционала</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden popup-btn" data-id="popup-png">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden popup-btn" data-id="popup-png">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-image"></use>
 													</svg>
 												</a>
 												<div class="c-dropdown__container">Скачать изображение для коллажей (PNG) <br> Необходима авторизация</div>
 											</div>
-											<div class="product-card__control c-dropdown">
-												<a href="#" class="product-card__control-trigger is--hidden">
+											<div class="catalog-card__control c-dropdown">
+												<a href="#" class="catalog-card__control-trigger is--hidden">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-download"></use>
 													</svg>
@@ -1311,9 +1511,9 @@
 												<div class="c-dropdown__container">Скачать превью-изображение</div>
 											</div>
 										</div>
-										<div class="product-card__controls product-card__controls--bottom">
-											<div class="product-card__control c-dropdown">
-												<button class="product-card__control-trigger product-card__control-trigger--accent is--hidden quick-view-btn">
+										<div class="catalog-card__controls catalog-card__controls--bottom">
+											<div class="catalog-card__control c-dropdown">
+												<button class="catalog-card__control-trigger catalog-card__control-trigger--accent is--hidden quick-view-btn">
 													<svg>
 														<use xlink:href="img/sprite.svg#icon-eye"></use>
 													</svg>
@@ -1321,29 +1521,51 @@
 												<div class="c-dropdown__container">Быстрый просмотр</div>
 											</div>
 										</div>
-										<a href="#" class="product-card__img">
-											<img src="img/catalog-01.png" alt="Image">
-										</a>
-									</div>
-									<div class="product-card__body">
-										<div class="product-card__block">
-											<span class="product-card__help">Искусственное дерево</span>
-											<div class="product-card__name-wrap">
-												<a href="#" class="product-card__name">Апельсиновое дерево с плодами</a>
+										<div class="catalog-card__slider">
+											<div class="swiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-03.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-02.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+													<div class="swiper-slide">
+														<a href="#" class="catalog-card__img">
+															<img src="img/catalog-01.png" alt="Image">
+														</a>
+													</div>
+												</div>
 											</div>
-											<div class="product-card__info">
-												<span class="product-card__value">Размер см <b>70</b></span>
-												<span class="product-card__value">Артикул <b>10.40402N</b></span>
-												<span class="product-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
-												<span class="product-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="catalog-card__body">
+										<div class="catalog-card__block">
+											<span class="catalog-card__help">Искусственное дерево</span>
+											<a href="#" class="catalog-card__name">Апельсиновое дерево с плодами</a>
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Размер см <b>70</b></span>
+												<span class="catalog-card__value">Артикул <b>10.40402N</b></span>
+												<span class="catalog-card__value">Материал <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Цвет <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
+												<span class="catalog-card__value">Тип кашпо <b>Натуральное дерево, полистирол, высокотехнологичный пластик</b></span>
 											</div>
 										</div>
-										<div class="product-card__block">
-											<div class="product-card__info">
-												<span class="product-card__value">Цена <b>12 363,30 Р.</b></span>
+										<div class="catalog-card__block">
+											<div class="catalog-card__info">
+												<span class="catalog-card__value">Цена <b>12 363,30 Р.</b></span>
 											</div>
-											<a href="#" class="product-card__btn btn btn--sm btn--border">
+											<a href="#" class="catalog-card__btn btn btn--sm btn--border">
 												<svg>
 													<use xlink:href="img/sprite.svg#icon-cart"></use>
 												</svg>
@@ -1354,7 +1576,8 @@
 								</article>
 							</div>
 							<div class="catalog__bottom">
-								<a href="#" class="catalog__more">Показать все</a>
+								<a href="#" class="catalog__all">Показать все</a>
+								<a href="#" class="catalog__more btn btn--sm">Показать еще</a>
 								<div class="c-pagination catalog__pagination">
 									<ul class="c-pagination__list">
 										<li class="c-pagination__item c-pagination__item--arrow is--hiddn">
@@ -1389,15 +1612,42 @@
 								</div>
 							</div>
 							<div class="catalog-seo catalog__seo">
-								<button class="catalog-seo__trigger" aria-label="Открыть/закрыть"></button>
+								<button class="catalog-seo__trigger" aria-label="Открыть/закрыть">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-plus"></use>
+									</svg>
+								</button>
 								<div class="catalog-seo__dropdown">
 									<div class="catalog-seo__content">
-										<p>Купить дизайнерское кашпо оптом от производителя можно в интернет-магазине Treez Collection. Цены на кашпо могут отличаться в зависимости от выбранных размеров. Доставка осуществляется по Москве и в регионы России. </p>
+										<div class="columns">
+											<div class="columns__item">
+												<p>Современные искусственные растения не только экономят время и деньги, но и выглядят чаще всего лучше натуральных. Вместе с правильно подобранными дизайнерскими кашпо они составляют стильный</p>
+												<h3>Преимущества и недостатки по сравнению с живыми растениями</h3>
+												<p>Они обладают целым рядом преимуществ:</p>
+												<ul>
+													<li>Не вызывают аллергии, поскольку на них нет пыльцы. А значит, они могут украсить ваш дом без ограничений. Нужно только регулярно протирать их листья от пыли, но эта процедура необходима и настоящим декоративным растениям.</li>
+													<li>Сохраняют привлекательный внешний вид в течение всего срока службы. У настоящего дерева есть определенный жизненный цикл. Оно отцветает, может терять листья. Красота той же цветущей сакуры или пламенеющих листьев клена недолговечна. Но искусственными деревьями можно любоваться круглогодично и долгие годы.</li>
+													<li>Не требуют особого ухода. Настоящие деревья нужно поливать, удобрять, обрабатывать специальными защитными средствами от вредителей, обрезать ветки, придавать кроне нужную форму.</li>
+												</ul>
+												<p>У искусственных деревьев есть и свои недостатки. И главный из них – они не очищают воздух так, как это делают живые растения, поглощающие углекислый газ. И, конечно, они не приносят настоящих плодов. Но этим их недостатки и ограничиваются.</p>
+											</div>
+											<div class="columns__item">
+												<h3>Как и какой вид выбрать?</h3>
+												<p>Такие растения выполняют декоративную функцию. Поэтому выбирать их нужно так, чтобы они хорошо смотрелись в интерьере. При этом учитывают такие критерии как:</p>
+												<ol>
+													<li>Высота дерева и диаметр кроны – оно не должно теряться среди других предметов обстановки, но и не должно доминировать.</li>
+													<li>Его разновидность.</li>
+													<li>Форма кроны. В интерьере, оформленном в современном стиле, уместны деревья со строгими линиями и пирамидальной кроной. В средиземноморском интерьере хорошо смотрятся шаровидные экземпляры.</li>
+													<li>Оттенок листьев и бутонов (если таковые имеются).</li>
+													<li>Художественное оформление (цвет и фактура горшка или вазона).</li>
+												</ol>
+												<p>Нужно заранее продумать, где будет стоять дерево. Например, экзотическая большая пальма может украсить холл офисного центра, искусственные сакуры или ивы хорошо вписываются в интерьер ресторанов, оформленных в японском стиле. А вот небольшое цитрусовое деревце или тую можно поставить и дома, и в офисе.</p>
+												<p>И, конечно, искусственные деревья должны быть качественными. Их стволы, ветки, листья и плоды должны быть изготовлены из прочных и экологически чистых материалов.</p>
+												<p>У нас большой выбор искусственных деревьев. Обращайтесь, поможем сделать верный выбор!</p>
+											</div>
+										</div>
 										<br>
-										<br>
-										<br>
-										<br>
-										<div class="catalog-seo__links">
+										<div class="links">
 											<a href="#">Кашпо TREEZ Effectory</a>,
 											<a href="#">Кашпо TREEZ ERGO</a>,
 											<a href="#">Кашпо TREEZ Japonica</a>,
@@ -1445,7 +1695,7 @@
 						</p>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__title">Каталог</h3>
+						<span class="footer__title">Каталог</span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Деревья</a>
@@ -1471,7 +1721,7 @@
 						</ul>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__title">О КОМПАНИИ</h3>
+						<span class="footer__title">О КОМПАНИИ</span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">О Treez</a>
@@ -1507,7 +1757,7 @@
 						</ul>
 					</div>
 					<div class="footer__block footer__block--short-list">
-						<h3 class="footer__title footer__title--plug"></h3>
+						<span class="footer__title footer__title--plug"></span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Новости</a>
@@ -1524,7 +1774,7 @@
 						</ul>
 					</div>
 					<div class="footer__block footer__block--social">
-						<h3 class="footer__subtitle">Присоединяйтесь к treez <br>в социальных сетях</h3>
+						<span class="footer__subtitle">Присоединяйтесь к treez <br>в социальных сетях</span>
 						<div class="c-socmedia footer__socmedia">
 							<ul class="c-socmedia__list">
 								<li class="c-socmedia__item">

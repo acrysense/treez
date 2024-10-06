@@ -480,344 +480,368 @@
 					<div class="catalog__wrap catalog__wrap--border">
 						<div class="catalog__left">
 							<div class="catalog-filter">
-								<form action="#" class="catalog-filter__form">
-									<div class="catalog-filter__holder">
-										<div class="catalog-filter__main">
-											<div class="catalog-filter__block">
-												<label for="switch-3d-models" class="switch catalog-filter__switch">
-													<input type="checkbox" id="switch-3d-models" class="switch__input">
-													<div class="switch__group">
-														<span class="switch__icon"></span>
-														<span class="switch__title">Есть 3D модели</span>
-													</div>
-												</label>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Группа</span>
+								<div class="catalog-filter__wrap">
+									<div class="page-search catalog-filter__search">
+										<div class="page-search__wrapper">
+											<form action="#" class="page-search__form">
+												<div class="page-search__block">
+													<input type="text" class="page-search__input" placeholder="Название или артикул">
+													<span class="page-search__help">например, <a href="#" data-value="Кипарис">Кипарис</a></span>
+												</div>
+												<button class="page-search__btn">
 													<svg>
-														<use xlink:href="img/sprite.svg#icon-caret"></use>
+														<use xlink:href="img/sprite.svg#icon-search"></use>
 													</svg>
 												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__checkboxes">
-														<div class="catalog-filter__checkbox-group">
-															<div class="catalog-filter__checkbox-inner">
-																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
-																	<div class="square-checkbox__group">
-																		<label for="filter-effectory-all" class="square-checkbox__icon"></label>
-																		<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
+											</form>
+										</div>
+									</div>
+									<form action="#" class="catalog-filter__form">
+										<div class="catalog-filter__holder">
+											<div class="catalog-filter__main">
+												<div class="catalog-filter__block">
+													<label for="switch-3d-models" class="switch catalog-filter__switch">
+														<input type="checkbox" id="switch-3d-models" class="switch__input">
+														<div class="switch__group">
+															<span class="switch__icon"></span>
+															<span class="switch__title">Есть 3D модели</span>
+														</div>
+													</label>
+													<label for="switch-mob-availability" class="switch catalog-filter__switch catalog-filter__switch--mobile">
+														<input type="checkbox" id="switch-mob-availability" class="switch__input">
+														<div class="switch__group">
+															<span class="switch__icon"></span>
+															<span class="switch__title">Только в наличии</span>
+														</div>
+													</label>
+												</div>
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Группа</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__checkboxes">
+															<div class="catalog-filter__checkbox-group">
+																<div class="catalog-filter__checkbox-inner">
+																	<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-all">
+																		<div class="square-checkbox__group">
+																			<label for="filter-effectory-all" class="square-checkbox__icon"></label>
+																			<span class="square-checkbox__title">Кашпо TREEZ Effectory</span>
+																		</div>
+																	</div>
+																	<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-caret"></use>
+																		</svg>
+																	</button>
+																</div>
+																<div class="catalog-filter__checkbox-dropdown">
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-01">
+																		<label for="filter-effectory-01" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Beton</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-02">
+																		<label for="filter-effectory-02" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Crystal</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-03">
+																		<label for="filter-effectory-03" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Gloss</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-effectory-04">
+																		<label for="filter-effectory-04" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ Effectory - Metal</span>
+																		</label>
 																	</div>
 																</div>
-																<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-caret"></use>
-																	</svg>
-																</button>
 															</div>
-															<div class="catalog-filter__checkbox-dropdown">
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-01">
-																	<label for="filter-effectory-01" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Beton</span>
-																	</label>
+															<div class="catalog-filter__checkbox-group">
+																<div class="catalog-filter__checkbox-inner">
+																	<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-group-all">
+																		<label for="filter-group-all" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
+																		</label>
+																	</div>
+																	<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-caret"></use>
+																		</svg>
+																	</button>
 																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-02">
-																	<label for="filter-effectory-02" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Crystal</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-03">
-																	<label for="filter-effectory-03" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Gloss</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-effectory-04">
-																	<label for="filter-effectory-04" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ Effectory - Metal</span>
-																	</label>
-																</div>
-															</div>
-														</div>
-														<div class="catalog-filter__checkbox-group">
-															<div class="catalog-filter__checkbox-inner">
-																<div class="square-checkbox catalog-filter__checkbox catalog-filter__checkbox--all">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-group-all">
-																	<label for="filter-group-all" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">Кашпо TREEZ ERGO</span>
-																	</label>
-																</div>
-																<button class="catalog-filter__checkbox-trigger" aria-label="Раскрыть">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-caret"></use>
-																	</svg>
-																</button>
-															</div>
-															<div class="catalog-filter__checkbox-dropdown">
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-01">
-																	<label for="filter-ergo-01" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Comb</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-02">
-																	<label for="filter-ergo-02" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Cork</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-03">
-																	<label for="filter-ergo-03" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Graphics</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-04">
-																	<label for="filter-ergo-04" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Diamond</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-05">
-																	<label for="filter-ergo-05" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Jet</span>
-																	</label>
-																</div>
-																<div class="square-checkbox catalog-filter__checkbox">
-																	<input type="checkbox" class="square-checkbox__input" id="filter-ergo-06">
-																	<label for="filter-ergo-06" class="square-checkbox__group">
-																		<span class="square-checkbox__icon"></span>
-																		<span class="square-checkbox__title">TREEZ ERGO Just</span>
-																	</label>
+																<div class="catalog-filter__checkbox-dropdown">
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-01">
+																		<label for="filter-ergo-01" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Comb</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-02">
+																		<label for="filter-ergo-02" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Cork</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-03">
+																		<label for="filter-ergo-03" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Graphics</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-04">
+																		<label for="filter-ergo-04" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Diamond</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-05">
+																		<label for="filter-ergo-05" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Jet</span>
+																		</label>
+																	</div>
+																	<div class="square-checkbox catalog-filter__checkbox">
+																		<input type="checkbox" class="square-checkbox__input" id="filter-ergo-06">
+																		<label for="filter-ergo-06" class="square-checkbox__group">
+																			<span class="square-checkbox__icon"></span>
+																			<span class="square-checkbox__title">TREEZ ERGO Just</span>
+																		</label>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Материал</span>
-													<span class="catalog-filter__clear is--active">Сбросить</span>
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-caret"></use>
-													</svg>
-												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__checkboxes">
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-01">
-															<label for="filter-materias-01" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Полистоун</span>
-															</label>
-														</div>
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-02" checked>
-															<label for="filter-materias-02" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Композитный пластик</span>
-															</label>
-														</div>
-														<div class="square-checkbox catalog-filter__checkbox">
-															<input type="checkbox" class="square-checkbox__input" id="filter-materias-03" disabled>
-															<label for="filter-materias-03" class="square-checkbox__group">
-																<span class="square-checkbox__icon"></span>
-																<span class="square-checkbox__title">Кортеновская сталь</span>
-															</label>
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Материал</span>
+														<span class="catalog-filter__clear is--active">Сбросить</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__checkboxes">
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-01">
+																<label for="filter-materias-01" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Полистоун</span>
+																</label>
+															</div>
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-02" checked>
+																<label for="filter-materias-02" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Композитный пластик</span>
+																</label>
+															</div>
+															<div class="square-checkbox catalog-filter__checkbox">
+																<input type="checkbox" class="square-checkbox__input" id="filter-materias-03" disabled>
+																<label for="filter-materias-03" class="square-checkbox__group">
+																	<span class="square-checkbox__icon"></span>
+																	<span class="square-checkbox__title">Кортеновская сталь</span>
+																</label>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block is--open">
-												<button class="catalog-filter__trigger">
-													<span>Цена <span>Руб.</span></span>
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-caret"></use>
-													</svg>
-												</button>
-												<div class="catalog-filter__dropdown" style="display: block;">
-													<div class="catalog-filter__range">
-														<div class="catalog-filter__range-inner">
-															<div class="range-field">
-																<span class="range-field__help">От</span>
-																<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+												<div class="catalog-filter__block is--open">
+													<button class="catalog-filter__trigger">
+														<span>Цена <span>Руб.</span></span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown" style="display: block;">
+														<div class="catalog-filter__range">
+															<div class="catalog-filter__range-inner">
+																<div class="range-field">
+																	<span class="range-field__help">От</span>
+																	<input type="number" id="range-money-min" class="range-field__input range-field__input--min" placeholder="0">
+																</div>
+																<div class="range-field">
+																	<span class="range-field__help">До</span>
+																	<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
+																</div>
 															</div>
-															<div class="range-field">
-																<span class="range-field__help">До</span>
-																<input type="number" id="range-money-max" class="range-field__input range-field__input--max" placeholder="50000">
-															</div>
+															<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
 														</div>
-														<div class="catalog-filter__range-slider" data-range-start="423" data-range-end="44504" data-range-min="0" data-range-max="50000"></div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block">
-												<button class="catalog-filter__trigger">
-													<span>Высота <span>См</span></span>
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-caret"></use>
-													</svg>
-												</button>
-												<div class="catalog-filter__dropdown">
-													<div class="catalog-filter__range">
-														<div class="catalog-filter__range-inner">
-															<div class="range-field">
-																<span class="range-field__help">От</span>
-																<input type="number" id="range-height-min" class="range-field__input range-field__input--min" placeholder="0">
+												<div class="catalog-filter__block">
+													<button class="catalog-filter__trigger">
+														<span>Высота <span>См</span></span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown">
+														<div class="catalog-filter__range">
+															<div class="catalog-filter__range-inner">
+																<div class="range-field">
+																	<span class="range-field__help">От</span>
+																	<input type="number" id="range-height-min" class="range-field__input range-field__input--min" placeholder="0">
+																</div>
+																<div class="range-field">
+																	<span class="range-field__help">До</span>
+																	<input type="number" id="range-height-max" class="range-field__input range-field__input--max" placeholder="160">
+																</div>
 															</div>
-															<div class="range-field">
-																<span class="range-field__help">До</span>
-																<input type="number" id="range-height-max" class="range-field__input range-field__input--max" placeholder="160">
-															</div>
+															<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
 														</div>
-														<div class="catalog-filter__range-slider" data-range-start="10" data-range-end="90" data-range-min="0" data-range-max="160"></div>
 													</div>
 												</div>
-											</div>
-											<div class="catalog-filter__block">
-												<button class="catalog-filter__trigger">
-													<span>Цвет</span>
-													<svg>
-														<use xlink:href="img/sprite.svg#icon-caret"></use>
-													</svg>
-												</button>
-												<div class="catalog-filter__dropdown">
-													<div class="catalog-filter__colors">
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-01">
-															<label for="filter-color-01" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon color-checkbox__icon--dark color-checkbox__icon--white" style="--color: #FFFFFF;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Белый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-02">
-															<label for="filter-color-02" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #0a0a0a;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Чёрный</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-03">
-															<label for="filter-color-03" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #6c6960;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Серый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-04">
-															<label for="filter-color-04" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #eae6ca;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Бежевый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-05">
-															<label for="filter-color-05" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #ffcf48;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Золотой</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-06">
-															<label for="filter-color-06" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #7d512d;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Коричневый</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-07">
-															<label for="filter-color-07" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #d4764e;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Медный</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-08">
-															<label for="filter-color-08" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: black;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Окись</div>
-															</label>
-														</div>
-														<div class="color-checkbox catalog-filter__color">
-															<input type="checkbox" class="color-checkbox__input" id="filter-color-09">
-															<label for="filter-color-09" class="color-checkbox__group c-dropdown">
-																<span class="color-checkbox__icon" style="--color: #FFFFFF;">
-																	<svg>
-																		<use xlink:href="img/sprite.svg#icon-check"></use>
-																	</svg>
-																</span>
-																<div class="c-dropdown__container">Белый</div>
-															</label>
+												<div class="catalog-filter__block">
+													<button class="catalog-filter__trigger">
+														<span>Цвет</span>
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-caret"></use>
+														</svg>
+													</button>
+													<div class="catalog-filter__dropdown">
+														<div class="catalog-filter__colors">
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-01">
+																<label for="filter-color-01" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon color-checkbox__icon--dark color-checkbox__icon--white" style="--color: #FFFFFF;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Белый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-02">
+																<label for="filter-color-02" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #0a0a0a;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Чёрный</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-03">
+																<label for="filter-color-03" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #6c6960;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Серый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-04">
+																<label for="filter-color-04" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #eae6ca;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Бежевый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-05">
+																<label for="filter-color-05" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #ffcf48;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Золотой</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-06">
+																<label for="filter-color-06" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #7d512d;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Коричневый</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-07">
+																<label for="filter-color-07" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #d4764e;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Медный</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-08">
+																<label for="filter-color-08" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: black;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Окись</div>
+																</label>
+															</div>
+															<div class="color-checkbox catalog-filter__color">
+																<input type="checkbox" class="color-checkbox__input" id="filter-color-09">
+																<label for="filter-color-09" class="color-checkbox__group c-dropdown">
+																	<span class="color-checkbox__icon" style="--color: #FFFFFF;">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-check"></use>
+																		</svg>
+																	</span>
+																	<div class="c-dropdown__container">Белый</div>
+																</label>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="catalog-filter__controls">
-										<button class="catalog-filter__btn btn btn--md">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-check"></use>
-											</svg>
-											<span>Применить</span>
-										</button>
-										<button class="catalog-filter__btn btn btn--md btn--normal btn--white">
-											<svg>
-												<use xlink:href="img/sprite.svg#icon-restore"></use>
-											</svg>
-											<span>Сбросить все</span>
-										</button>
-									</div>
-								</form>
+										<div class="catalog-filter__controls">
+											<button class="catalog-filter__btn btn btn--md">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-check"></use>
+												</svg>
+												<span>Применить</span>
+											</button>
+											<button class="catalog-filter__btn btn btn--md btn--normal btn--white">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-restore"></use>
+												</svg>
+												<span>Сбросить все</span>
+											</button>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 						<div class="catalog__right">
@@ -1755,7 +1779,7 @@
 						</p>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__title">Каталог</h3>
+						<span class="footer__title">Каталог</span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Деревья</a>
@@ -1781,7 +1805,7 @@
 						</ul>
 					</div>
 					<div class="footer__block">
-						<h3 class="footer__title">О КОМПАНИИ</h3>
+						<span class="footer__title">О КОМПАНИИ</span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">О Treez</a>
@@ -1817,7 +1841,7 @@
 						</ul>
 					</div>
 					<div class="footer__block footer__block--short-list">
-						<h3 class="footer__title footer__title--plug"></h3>
+						<span class="footer__title footer__title--plug"></span>
 						<ul class="footer__list">
 							<li class="footer__item">
 								<a href="#" class="footer__link">Новости</a>
@@ -1834,7 +1858,7 @@
 						</ul>
 					</div>
 					<div class="footer__block footer__block--social">
-						<h3 class="footer__subtitle">Присоединяйтесь к treez <br>в социальных сетях</h3>
+						<span class="footer__subtitle">Присоединяйтесь к treez <br>в социальных сетях</span>
 						<div class="c-socmedia footer__socmedia">
 							<ul class="c-socmedia__list">
 								<li class="c-socmedia__item">
