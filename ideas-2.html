@@ -881,6 +881,51 @@
 		</div>
 		<div class="modal__overlay"></div>
 	</div>
+	<div class="modal fixed" id="modal-password">
+		<button class="modal__close-btn modal__close-btn--mobile modal__close" aria-label="Закрыть">
+			<svg class="modal__close-icon">
+				<use xlink:href="img/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="modal__scroll">
+			<div class="modal__wrap modal__wrap--sm">
+				<button class="modal__close-btn modal__close-btn--desktop modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="modal__wrapper">
+					<div class="modal__main">
+						<div class="modal__top">
+							<h3 class="modal__heading">Введите пароль</h3>
+						</div>
+						<div class="modal__body">
+							<form action="#" class="modal__form">
+								<!-- add class 'is--active' for visible -->
+								<div class="form-error">
+									<span class="form-error__title">Неверный логин или пароль.</span>
+								</div>
+								<div class="input-field modal__input">
+									<div class="input-field__inner">
+										<input type="password" id="auth-password" class="input-field__input" placeholder="Введите пароль">
+										<button class="input-field__visibility-btn">
+											<span class="input-field__visibility-icon"></span>
+											<span class="input-field__visibility-title">показать</span>
+										</button>
+									</div>
+									<label for="auth-password" class="input-field__label">пароль *</label>
+								</div>
+								<div class="modal__bottom">
+									<button class="modal__btn btn">Войти</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
 	<!-- end of modal -->
 	<!-- ideas popup -->
 	<div class="ideas-popup" id="ideas-popup">
